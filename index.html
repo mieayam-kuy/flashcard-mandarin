@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard & Quiz Mandarin (HSK)</title>
+  <!-- Icon Web / Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
+  
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      min-height: 100vh; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 20px;
+    }
+    h1 { margin-bottom: 16px; color: #333; font-size: 24px; text-align: center; }
+
+    /* Welcome / Input Nama Modal */
+    .welcome-overlay {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; z-index: 2000;
+    }
+    .welcome-box {
+      background: white; border-radius: 16px; padding: 30px 24px; width: 90%; max-width: 400px;
+      text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+    .welcome-box h2 { color: #2d3748; margin-bottom: 10px; font-size: 22px; }
+    .welcome-box p { color: #718096; font-size: 14px; margin-bottom: 20px; }
+    .welcome-input {
+      width: 100%; padding: 12px; font-size: 15px; border: 2px solid #e2e8f0;
+      border-radius: 8px; margin-bottom: 16px; outline: none; text-align: center;
+    }
+    .welcome-input:focus { border-color: #3182ce; }
+    .btn-enter {
+      width: 100%; padding: 12px; font-size: 16px; font-weight: bold;
+      background: #3182ce; color: white; border: none; border-radius: 8px; cursor: pointer; transition: 0.2s;
+    }
+    .btn-enter:hover { background: #2b6cb0; }
+
+    /* User Info Bar */
+    .user-bar {
+      display: flex; justify-content: space-between; align-items: center;
+      width: 100%; max-width: 520px; background: white; padding: 10px 16px;
+      border-radius: 10px; margin-bottom: 12px; font-size: 13px; font-weight: 600; color: #4a5568;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .btn-change-user {
+      background: #edf2f7; border: none; padding: 4px 10px; border-radius: 6px;
+      font-size: 12px; color: #e53e3e; cursor: pointer; font-weight: bold;
+    }
+
+    /* Mode Selector Tab */
+    .mode-tab {
+      display: flex; gap: 6px; margin-bottom: 16px; background: #e2e8f0; padding: 4px; border-radius: 10px;
+      width: 100%; max-width: 520px; justify-content: center; flex-wrap: wrap;
+    }
+    .btn-tab {
+      flex: 1; min-width: 90px; padding: 8px 6px; border: none; font-weight: bold; background: transparent; color: #4a5568;
+      border-radius: 8px; cursor: pointer; transition: 0.2s; font-size: 11px; text-align: center;
+    }
+    .btn-tab.active { background: #3182ce; color: white; box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
+    .btn-tab.time-attack-tab.active { background: #dd6b20; }
+    .btn-tab.auto-learn-tab.active { background: #805ad5; }
+
+    /* Control Panel */
+    .controls {
+      background: white; padding: 16px 20px; border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 20px;
+      width: 100%; max-width: 520px; display: flex; flex-direction: column; gap: 12px;
+    }
+    .control-group { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    .control-group label { font-size: 13px; font-weight: 600; color: #4a5568; }
+    .btn-group { display: flex; gap: 4px; background: #edf2f7; padding: 4px; border-radius: 8px; flex-wrap: wrap; }
+    .btn-option {
+      padding: 6px 10px; font-size: 12px; font-weight: 600; border: none;
+      background: transparent; color: #4a5568; border-radius: 6px; cursor: pointer; transition: all 0.2s;
+    }
+    .btn-option.active { background: #3182ce; color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+
+    .select-hsk {
+      padding: 6px 10px; font-size: 12px; font-weight: bold; border-radius: 6px;
+      border: 1px solid #cbd5e0; background: white; color: #2d3748; outline: none;
+    }
+
+    .btn-manage {
+      width: 100%; padding: 8px; font-size: 13px; font-weight: 600;
+      background: #4a5568; color: white; border: none; border-radius: 8px; cursor: pointer; transition: 0.2s;
+    }
+    .btn-manage:hover { background: #2d3748; }
+
+    /* Flashcard UI */
+    .main-box { width: 100%; max-width: 520px; }
+    .card-container { perspective: 1000px; margin-bottom: 12px; }
+    .card {
+      background: #ffffff; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      cursor: pointer; text-align: center; padding: 30px 20px; min-height: 240px;
+      transition: transform 0.2s, box-shadow 0.2s; border: 2px solid #eef2f5; position: relative;
+    }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,0.12); }
+    .badge-hsk {
+      position: absolute; top: 12px; right: 16px; background: #feebc8; color: #c05621;
+      font-size: 11px; font-weight: bold; padding: 2px 8px; border-radius: 12px;
+    }
+    
+    .badge-hafal {
+      position: absolute; top: 12px; left: 58px; background: #c6f6d5; color: #22543d;
+      font-size: 11px; font-weight: bold; padding: 2px 8px; border-radius: 12px; display: none;
+    }
+
+    .btn-speak-card {
+      position: absolute; top: 10px; left: 16px; background: #edf2f7; border: none;
+      border-radius: 50%; width: 36px; height: 36px; font-size: 16px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; transition: 0.2s; color: #2b6cb0;
+    }
+    .btn-speak-card:hover { background: #e2e8f0; transform: scale(1.1); }
+
+    .main-text { font-size: 34px; font-weight: bold; color: #1a202c; margin-bottom: 16px; word-break: break-word; }
+    .divider { width: 40px; height: 3px; background: #e2e8f0; margin-bottom: 16px; border-radius: 2px; }
+    .sub-text { font-size: 20px; color: #2b6cb0; margin-bottom: 8px; font-weight: 500; word-break: break-word; }
+    .arti { font-size: 18px; color: #2f855a; font-weight: 600; word-break: break-word; }
+    .hidden { visibility: hidden; opacity: 0; }
+    .visible { visibility: visible; opacity: 1; }
+
+    /* Flashcard Action Buttons */
+    .fc-action-bar { display: flex; gap: 8px; margin-bottom: 12px; }
+    .btn-hafal {
+      flex: 1; padding: 10px; font-size: 13px; font-weight: bold; border: none;
+      background-color: #38a169; color: white; border-radius: 8px; cursor: pointer; transition: 0.2s;
+      box-shadow: 0 2px 6px rgba(56, 161, 105, 0.3);
+    }
+    .btn-hafal:hover { background-color: #2f855a; }
+    .btn-unhafal {
+      flex: 1; padding: 10px; font-size: 13px; font-weight: bold; border: none;
+      background-color: #dd6b20; color: white; border-radius: 8px; cursor: pointer; transition: 0.2s;
+    }
+    .btn-unhafal:hover { background-color: #c05621; }
+
+    .nav-buttons { display: flex; gap: 10px; width: 100%; }
+    .btn-nav {
+      flex: 1; padding: 12px; font-size: 14px; font-weight: bold; border: none;
+      color: white; border-radius: 10px; cursor: pointer; transition: 0.2s;
+    }
+    .btn-prev { background-color: #718096; }
+    .btn-prev:hover { background-color: #4a5568; }
+    .btn-next { background-color: #3182ce; }
+    .btn-next:hover { background-color: #2b6cb0; }
+
+    /* Auto Learning UI */
+    .auto-controls-box {
+      background: white; border-radius: 16px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      display: flex; flex-direction: column; gap: 14px; text-align: center;
+    }
+    .auto-play-bar { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+    .btn-auto-play {
+      flex: 1; min-width: 90px; padding: 10px 12px; font-size: 13px; font-weight: bold; border: none; border-radius: 8px;
+      color: white; cursor: pointer; transition: 0.2s;
+    }
+    .btn-auto-start { background: #805ad5; }
+    .btn-auto-start:hover { background: #6b46c1; }
+    .btn-auto-pause { background: #dd6b20; }
+    .btn-auto-pause:hover { background: #c05621; }
+    .btn-auto-resume { background: #3182ce; }
+    .btn-auto-resume:hover { background: #2b6cb0; }
+    .btn-auto-stop { background: #e53e3e; }
+    .btn-auto-stop:hover { background: #c53030; }
+
+    /* Auto Learning Previous Cards History Box */
+    .auto-history-box {
+      margin-top: 12px; background: #edf2f7; border-radius: 12px; padding: 12px 16px;
+      display: flex; flex-direction: column; gap: 8px; border: 1px dashed #cbd5e0;
+    }
+    .auto-history-title { font-size: 11px; font-weight: bold; color: #718096; text-transform: uppercase; text-align: left; }
+    .auto-history-item {
+      background: white; border-radius: 8px; padding: 8px 12px; display: flex; justify-content: space-between;
+      align-items: center; font-size: 13px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); opacity: 0.85;
+    }
+    .auto-history-hanzi { font-weight: bold; color: #2d3748; font-size: 16px; }
+    .auto-history-pinyin { color: #2b6cb0; font-size: 12px; }
+    .auto-history-arti { color: #2f855a; font-weight: 600; font-size: 12px; text-align: right; }
+
+    /* Quiz Mode UI */
+    .quiz-container {
+      background: white; border-radius: 16px; padding: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center; display: none; flex-direction: column; gap: 16px;
+    }
+    .quiz-q-box { background: #f7fafc; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; position: relative; }
+    .quiz-question { font-size: 28px; font-weight: bold; color: #2d3748; word-break: break-word; }
+    
+    .btn-speak-inline {
+      background: #edf2f7; border: none; border-radius: 6px; padding: 4px 8px;
+      font-size: 14px; cursor: pointer; margin-left: 8px; color: #2b6cb0; transition: 0.2s;
+    }
+    .btn-speak-inline:hover { background: #e2e8f0; }
+
+    .quiz-options { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
+    .btn-quiz-opt {
+      padding: 14px; font-size: 16px; font-weight: 600; border: 2px solid #e2e8f0;
+      background: white; border-radius: 10px; cursor: pointer; transition: 0.2s; text-align: center;
+    }
+    .btn-quiz-opt:hover { background: #ebf8ff; border-color: #3182ce; }
+    .btn-quiz-opt.correct { background: #c6f6d5 !important; border-color: #38a169 !important; color: #22543d; }
+    .btn-quiz-opt.wrong { background: #fed7d7 !important; border-color: #e53e3e !important; color: #742a2a; }
+
+    .timer-bar-box { width: 100%; background: #edf2f7; height: 6px; border-radius: 4px; overflow: hidden; margin-top: 6px; }
+    .timer-bar { width: 100%; height: 100%; background: #e53e3e; transition: width 0.1s linear; }
+
+    .quiz-input-num { width: 60px; padding: 6px; font-size: 13px; border: 1px solid #cbd5e0; border-radius: 6px; text-align: center; }
+    .btn-start-quiz {
+      padding: 12px 24px; background: #38a169; color: white; border: none; font-weight: bold;
+      font-size: 16px; border-radius: 8px; cursor: pointer; transition: 0.2s;
+    }
+    .btn-start-quiz:hover { background: #2f855a; }
+    .btn-start-ta { background: #dd6b20; }
+    .btn-start-ta:hover { background: #c05621; }
+
+    .btn-cancel-quiz {
+      background: transparent; border: 1px solid #e53e3e; color: #e53e3e; padding: 6px 12px;
+      border-radius: 6px; font-size: 12px; font-weight: bold; cursor: pointer; margin-top: 10px;
+    }
+
+    .review-table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 13px; text-align: left; }
+    .review-table th, .review-table td { padding: 8px 10px; border-bottom: 1px solid #e2e8f0; }
+    .review-table th { background: #f7fafc; color: #4a5568; }
+    .res-correct { color: #38a169; font-weight: bold; }
+    .res-wrong { color: #e53e3e; font-weight: bold; }
+
+    /* View Materi (Daftar Isi) UI */
+    .materi-container {
+      background: white; border-radius: 16px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      display: none; flex-direction: column; gap: 12px;
+    }
+    .materi-filter-bar { display: flex; gap: 6px; justify-content: center; }
+    .materi-search {
+      width: 100%; padding: 10px 14px; font-size: 13px; border: 1px solid #cbd5e0;
+      border-radius: 8px; outline: none;
+    }
+    .materi-search:focus { border-color: #3182ce; }
+    .materi-table-wrapper { max-height: 400px; overflow-y: auto; border: 1px solid #e2e8f0; border-radius: 8px; }
+    .materi-table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: left; }
+    .materi-table th, .materi-table td { padding: 10px 12px; border-bottom: 1px solid #edf2f7; }
+    .materi-table th { background: #f7fafc; color: #4a5568; position: sticky; top: 0; z-index: 10; }
+    .materi-table tr:hover { background: #f8fafc; }
+
+    .btn-sm-action {
+      padding: 4px 8px; font-size: 11px; font-weight: bold; border: none; border-radius: 4px; cursor: pointer;
+    }
+    .btn-sm-hafal { background: #c6f6d5; color: #22543d; }
+    .btn-sm-unhafal { background: #feebc8; color: #c05621; }
+
+    .hint { color: #718096; font-size: 13px; margin-top: 12px; text-align: center; }
+    .counter { margin-top: 10px; font-size: 13px; font-weight: 600; color: #4a5568; text-align: center; }
+
+    /* Footer */
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #4a5568;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+
+    /* Modal Styling */
+    .modal-overlay {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5); display: none; align-items: center; justify-content: center; z-index: 1000;
+    }
+    .modal-content {
+      background: white; border-radius: 16px; padding: 24px; width: 90%; max-width: 750px;
+      max-height: 85vh; overflow-y: auto; box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+    .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+    .btn-close { background: none; border: none; font-size: 24px; cursor: pointer; color: #a0aec0; }
+    .db-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .db-table th, .db-table td { border: 1px solid #e2e8f0; padding: 8px 10px; font-size: 13px; }
+    .db-table th { background: #edf2f7; text-align: left; }
+    .db-table input { width: 100%; padding: 6px; border: 1px solid #cbd5e0; border-radius: 4px; font-size: 13px; }
+    .btn-delete { background: #e53e3e; color: white; border: none; padding: 6px 10px; border-radius: 4px; cursor: pointer; }
+    .excel-import { margin-top: 20px; padding: 15px; background: #f7fafc; border: 1px dashed #cbd5e0; border-radius: 8px; }
+    .excel-import textarea { width: 100%; height: 70px; padding: 8px; font-size: 12px; margin-top: 8px; border-radius: 4px; border: 1px solid #cbd5e0; }
+    .modal-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; }
+    .btn-action { padding: 10px 18px; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; }
+    .btn-add { background: #38a169; color: white; }
+    .btn-save { background: #3182ce; color: white; }
+  </style>
+</head>
+<body>
+
+  <!-- WELCOME MODAL -->
+  <div class="welcome-overlay" id="welcomeOverlay">
+    <div class="welcome-box">
+      <h2>👋 欢迎！ Selamat Datang</h2>
+      <p>Silakan masukkan nama kamu sebelum belajar:</p>
+      <input type="text" id="userNameInput" class="welcome-input" placeholder="Masukkan Nama Kamu..." autofocus>
+      <button class="btn-enter" onclick="submitName()">Mulai Belajar ➔</button>
+    </div>
+  </div>
+
+  <h1>📖 Flashcard & Quiz Mandarin</h1>
+
+  <!-- User Info Bar -->
+  <div class="user-bar">
+    <span>👤 学生 Xuéshēng: <strong id="currentUserDisplay">--</strong></span>
+    <button class="btn-change-user" onclick="resetUserSession()">Ganti Nama</button>
+  </div>
+
+  <!-- Mode Tab Navigasi Utama -->
+  <div class="mode-tab">
+    <button class="btn-tab active" id="tab-flashcard" onclick="switchMainView('flashcard')">🎴 Flashcard</button>
+    <button class="btn-tab auto-learn-tab" id="tab-autolearn" onclick="switchMainView('autolearn')">🎧 Auto Learning</button>
+    <button class="btn-tab" id="tab-quiz" onclick="switchMainView('quiz')">📝 Kuis Pilihan Ganda</button>
+    <button class="btn-tab time-attack-tab" id="tab-timeattack" onclick="switchMainView('timeattack')">⚡ Time Attack</button>
+    <button class="btn-tab" id="tab-materi" onclick="switchMainView('materi')">📚 Isi Materi</button>
+  </div>
+
+  <!-- Controls Panel -->
+  <div class="controls">
+    <div class="control-group">
+      <label>Database & HSK:</label>
+      <div style="display: flex; gap: 6px;">
+        <div class="btn-group">
+          <button class="btn-option active" id="db-kata" onclick="setDatabase('kata.json', 'db-kata')">Kata</button>
+          <button class="btn-option" id="db-kalimat" onclick="setDatabase('kalimat.json', 'db-kalimat')">Kalimat</button>
+        </div>
+        <select id="hskFilter" class="select-hsk" onchange="filterHskLevel()">
+          <option value="all">Semua HSK</option>
+          <option value="1">HSK 1</option>
+          <option value="2">HSK 2</option>
+          <option value="3">HSK 3</option>
+          <option value="4">HSK 4</option>
+          <option value="5">HSK 5</option>
+          <option value="6">HSK 6</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Controls Kecepatan Suara Terpisah -->
+    <div class="control-group">
+      <label>Kecepatan Suara Mandarin:</label>
+      <select id="speechRateMandarin" class="select-hsk">
+        <option value="0.5">0.5x (Lambat)</option>
+        <option value="0.8" selected>0.8x (Sedang)</option>
+        <option value="1.0">1.0x (Normal)</option>
+        <option value="1.2">1.2x (Cepat)</option>
+      </select>
+    </div>
+
+    <div class="control-group">
+      <label>Kecepatan Suara Indonesia:</label>
+      <select id="speechRateIndo" class="select-hsk">
+        <option value="0.8">0.8x (Sedang)</option>
+        <option value="1.0" selected>1.0x (Normal)</option>
+        <option value="1.2">1.2x (Cepat)</option>
+        <option value="1.5">1.5x (Sangat Cepat)</option>
+      </select>
+    </div>
+
+    <!-- Opsi Khusus Flashcard -->
+    <div class="control-group" id="fc-controls">
+      <label>Tampilkan Utama:</label>
+      <div class="btn-group">
+        <button class="btn-option active" id="mode-hanzi" onclick="setMode('hanzi', 'mode-hanzi')">Hanzi</button>
+        <button class="btn-option" id="mode-pinyin" onclick="setMode('pinyin', 'mode-pinyin')">Pinyin</button>
+        <button class="btn-option" id="mode-arti" onclick="setMode('arti', 'mode-arti')">Arti</button>
+      </div>
+    </div>
+
+    <!-- Opsi Khusus Auto Learning -->
+    <div id="auto-learn-controls" style="display: none; flex-direction: column; gap: 10px;">
+      <div class="control-group">
+        <label>Sumber Kata:</label>
+        <select id="auto-hafal-filter" class="select-hsk" style="width: 100%;">
+          <option value="unhafal" selected>Belum Hafal Saja</option>
+          <option value="hafal">Yang Sudah Hafal</option>
+          <option value="all">Semua Kata (Campuran)</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label>Urutan Pemutaran:</label>
+        <select id="autoOrder" class="select-hsk">
+          <option value="random" selected>🎲 Acak (Random)</option>
+          <option value="sequential">🔢 Berurutan (Sequential)</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label>Jeda Antar Kartu:</label>
+        <select id="autoDelaySec" class="select-hsk">
+          <option value="0.5">0.5 Detik</option>
+          <option value="1.0" selected>1.0 Detik</option>
+          <option value="2.0">2.0 Detik</option>
+          <option value="3.0">3.0 Detik</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Opsi Khusus Kuis & Time Attack -->
+    <div id="quiz-controls" style="display: none; flex-direction: column; gap: 10px;">
+      <div class="control-group">
+        <label>Sumber Soal Kuis:</label>
+        <select id="quiz-hafal-filter" class="select-hsk" style="width: 100%;">
+          <option value="unhafal" selected>Belum Hafal Saja</option>
+          <option value="hafal">Yang Sudah Hafal</option>
+          <option value="all">Semua Kata (Campuran)</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label>Soal ➔ Jawaban:</label>
+        <div style="display: flex; gap: 4px; align-items: center;">
+          <select id="quiz-q-type" class="select-hsk">
+            <option value="hanzi">Hanzi</option>
+            <option value="pinyin">Pinyin</option>
+            <option value="arti">Arti</option>
+          </select>
+          <span>➔</span>
+          <select id="quiz-a-type" class="select-hsk">
+            <option value="arti" selected>Arti</option>
+            <option value="pinyin">Pinyin</option>
+            <option value="hanzi">Hanzi</option>
+          </select>
+        </div>
+      </div>
+      <div class="control-group" id="quiz-normal-settings">
+        <label>Jumlah Soal & Waktu:</label>
+        <div style="display: flex; gap: 6px; align-items: center; font-size: 12px;">
+          <input type="number" id="quiz-count" class="quiz-input-num" value="5" min="1"> Soal
+          <input type="number" id="quiz-timer-sec" class="quiz-input-num" value="15" min="5"> Detik
+        </div>
+      </div>
+      <div class="control-group" id="ta-settings" style="display: none;">
+        <label>Waktu Per Soal Time Attack:</label>
+        <div style="display: flex; gap: 6px; align-items: center; font-size: 12px;">
+          <input type="number" id="ta-timer-sec" class="quiz-input-num" value="10" min="3"> Detik
+        </div>
+      </div>
+    </div>
+
+    <button class="btn-manage" onclick="openLoginModal()">⚙️ Kelola / Edit Database (Laoshi)</button>
+  </div>
+
+  <div class="main-box">
+    <!-- VIEW 1: FLASHCARD -->
+    <div id="view-flashcard">
+      <div class="card-container">
+        <div class="card" onclick="toggleAnswer()">
+          <button class="btn-speak-card" title="Dengarkan Suara" onclick="speakCurrentCard(event)">🔊</button>
+          <span id="card-hafal-badge" class="badge-hafal">✓ Sudah Hafal</span>
+          <span id="card-hsk-badge" class="badge-hsk">HSK 1</span>
+          <div id="main-text" class="main-text">Memuat data...</div>
+          <div class="divider"></div>
+          <div id="sub-text" class="sub-text hidden">--</div>
+          <div id="arti" class="arti hidden">--</div>
+        </div>
+      </div>
+
+      <!-- Action Bar Hafal -->
+      <div class="fc-action-bar">
+        <button class="btn-hafal" id="btnMarkHafal" onclick="markCurrentAsHafal()">✅ Tanda "Sudah Hafal"</button>
+        <button class="btn-unhafal" id="btnUnmarkHafal" style="display:none;" onclick="unmarkCurrentAsHafal()">🔄 Kembalikan ke Belajar</button>
+      </div>
+
+      <div class="nav-buttons">
+        <button class="btn-nav btn-prev" onclick="getPrevCard()">⬅️ Sebelumnya</button>
+        <button class="btn-nav btn-next" onclick="getNextCard()">Berikutnya ➔</button>
+      </div>
+      <p class="hint">💡 Klik kartu untuk melihat/menyembunyikan Jawaban</p>
+    </div>
+
+    <!-- VIEW 2: AUTO LEARNING -->
+    <div id="view-autolearn" style="display: none;">
+      <div class="card-container">
+        <div class="card" style="cursor: default;">
+          <span id="auto-card-hsk-badge" class="badge-hsk">HSK 1</span>
+          <div id="auto-main-text" class="main-text">Tekan Mulai untuk Belajar 🎧</div>
+          <div class="divider"></div>
+          <div id="auto-sub-text" class="sub-text visible">--</div>
+          <div id="auto-arti" class="arti visible" style="color: #2f855a;">--</div>
+        </div>
+      </div>
+
+      <!-- RIWAYAT KARTU SEBELUMNYA -->
+      <div id="autoHistoryContainer" class="auto-history-box" style="display: none;">
+        <div class="auto-history-title">📜 Kartu Sebelumnya:</div>
+        <div id="autoHistoryList" style="display: flex; flex-direction: column; gap: 6px;"></div>
+      </div>
+
+      <div class="auto-controls-box" style="margin-top: 12px;">
+        <div style="font-size: 13px; font-weight: bold; color: #4a5568;" id="auto-progress-text">Progres: 0 / 0</div>
+        <div class="auto-play-bar">
+          <button class="btn-auto-play btn-auto-start" id="btnAutoStart" onclick="startAutoLearning()">▶️ Mulai Putar</button>
+          <button class="btn-auto-play btn-auto-pause" id="btnAutoPause" style="display: none;" onclick="pauseAutoLearning()">⏸️ Pause</button>
+          <button class="btn-auto-play btn-auto-resume" id="btnAutoResume" style="display: none;" onclick="resumeAutoLearning()">▶️ Lanjutkan</button>
+          <button class="btn-auto-play btn-auto-stop" id="btnAutoStop" style="display: none;" onclick="stopAutoLearning()">⏹️ Stop</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIEW 3: QUIZ -->
+    <div id="view-quiz" class="quiz-container">
+      <div id="quiz-start-screen">
+        <h3>Pilihan Ganda Ready</h3>
+        <p style="color: #718096; margin: 10px 0 20px 0; font-size: 14px;">Uji pemahaman kosakata dengan kuis interaktif.</p>
+        <button class="btn-start-quiz" onclick="startQuiz()">Mulai Kuis 🚀</button>
+      </div>
+
+      <div id="quiz-play-screen" style="display: none;">
+        <div style="display: flex; justify-content: space-between; font-size: 13px; color: #718096; font-weight: 600;">
+          <span id="quiz-progress">Soal 1 / 5</span>
+          <span id="quiz-timer-text">⏱ 15 detik</span>
+        </div>
+
+        <div class="timer-bar-box">
+          <div id="timerBar" class="timer-bar"></div>
+        </div>
+
+        <div class="quiz-q-box" style="margin-top: 12px;">
+          <div style="display:flex; align-items:center; justify-content:center;">
+            <div id="quiz-q-text" class="quiz-question">--</div>
+            <button class="btn-speak-inline" id="btnSpeakQuiz" title="Dengarkan Suara">🔊</button>
+          </div>
+        </div>
+
+        <div class="quiz-options" id="quiz-options"></div>
+
+        <button class="btn-cancel-quiz" onclick="cancelQuiz()">🔄 Reset / Batal Kuis</button>
+      </div>
+
+      <div id="quiz-result-screen" style="display: none;">
+        <h2>🎉 Kuis Selesai!</h2>
+        <div style="font-size: 40px; font-weight: bold; color: #2b6cb0; margin: 10px 0;" id="quiz-final-score">0 / 100</div>
+        <p id="quiz-summary-text" style="color: #4a5568; margin-bottom: 15px; font-size: 14px;"></p>
+        
+        <h4 style="text-align: left; color: #2d3748; margin-top: 10px;">Review Jawaban:</h4>
+        <div style="max-height: 200px; overflow-y: auto;">
+          <table class="review-table">
+            <thead>
+              <tr>
+                <th>Soal</th>
+                <th>Pilihanmu</th>
+                <th>Kunci</th>
+              </tr>
+            </thead>
+            <tbody id="reviewTableBody"></tbody>
+          </table>
+        </div>
+
+        <button class="btn-start-quiz" style="margin-top: 15px;" onclick="startQuiz()">Ulangi Kuis 🔄</button>
+      </div>
+    </div>
+
+    <!-- VIEW 4: TIME ATTACK QUIZ -->
+    <div id="view-timeattack" class="quiz-container">
+      <div id="ta-start-screen">
+        <h3 style="color: #dd6b20;">⚡ Quiz Time Attack</h3>
+        <p style="color: #718096; margin: 10px 0 15px 0; font-size: 13px;">
+          ⏱ <strong>Waktu Berjalan Cepat Per Soal</strong><br>
+          ❌ <strong>Salah atau Kehabisan Waktu = GAME OVER!</strong><br>
+          Jawab sebanyak mungkin soal secara berurutan!
+        </p>
+        <button class="btn-start-quiz btn-start-ta" onclick="startTimeAttack()">Mulai Time Attack 🔥</button>
+      </div>
+
+      <div id="ta-play-screen" style="display: none;">
+        <div style="display: flex; justify-content: space-between; font-size: 13px; color: #dd6b20; font-weight: bold;">
+          <span id="ta-streak-text">🔥 Streak: 0 Soal</span>
+          <span id="ta-timer-text">⏱ 10.0s</span>
+        </div>
+
+        <div class="timer-bar-box">
+          <div id="taTimerBar" class="timer-bar" style="background: #dd6b20;"></div>
+        </div>
+
+        <div class="quiz-q-box" style="margin-top: 12px; border-color: #feebc8;">
+          <div style="display:flex; align-items:center; justify-content:center;">
+            <div id="ta-q-text" class="quiz-question">--</div>
+            <button class="btn-speak-inline" id="btnSpeakTa" title="Dengarkan Suara">🔊</button>
+          </div>
+        </div>
+
+        <div class="quiz-options" id="ta-options"></div>
+
+        <button class="btn-cancel-quiz" onclick="cancelTimeAttack()">🔄 Batal Time Attack</button>
+      </div>
+
+      <div id="ta-result-screen" style="display: none;">
+        <h2 style="color: #e53e3e;">💥 GAME OVER!</h2>
+        <p id="ta-over-reason" style="color: #718096; font-size: 13px; margin-top: 4px;"></p>
+        
+        <div style="display:flex; justify-content:space-around; margin: 15px 0; background:#fffaf0; padding:12px; border-radius:10px; border:1px solid #feebc8;">
+          <div>
+            <div style="font-size:11px; color:#c05621; font-weight:bold;">TOTAL TERJAWAB</div>
+            <div style="font-size:24px; font-weight:bold; color:#dd6b20;" id="ta-final-streak">0</div>
+          </div>
+          <div>
+            <div style="font-size:11px; color:#c05621; font-weight:bold;">TOTAL WAKTU</div>
+            <div style="font-size:24px; font-weight:bold; color:#dd6b20;" id="ta-final-time">0s</div>
+          </div>
+        </div>
+
+        <h4 style="text-align: left; color: #2d3748; margin-top: 10px;">Kilas Balik Soal Terjawab:</h4>
+        <div style="max-height: 180px; overflow-y: auto;">
+          <table class="review-table">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Soal</th>
+                <th>Jawaban Benar</th>
+              </tr>
+            </thead>
+            <tbody id="taReviewTableBody"></tbody>
+          </table>
+        </div>
+
+        <button class="btn-start-quiz btn-start-ta" style="margin-top: 15px;" onclick="startTimeAttack()">Coba Lagi 🔥</button>
+      </div>
+    </div>
+
+    <!-- VIEW 5: ISI MATERI -->
+    <div id="view-materi" class="materi-container">
+      <div class="materi-filter-bar">
+        <div class="btn-group" style="width: 100%;">
+          <button class="btn-option active" id="mat-filter-all" onclick="setMateriStatusFilter('all')">Semua Materi</button>
+          <button class="btn-option" id="mat-filter-unhafal" onclick="setMateriStatusFilter('unhafal')">Belum Hafal</button>
+          <button class="btn-option" id="mat-filter-hafal" onclick="setMateriStatusFilter('hafal')">Sudah Hafal</button>
+        </div>
+      </div>
+
+      <input type="text" id="materiSearchInput" class="materi-search" placeholder="🔍 Cari Hanzi, Pinyin, atau Arti..." oninput="renderMateriTable()">
+      
+      <div class="materi-table-wrapper">
+        <table class="materi-table">
+          <thead>
+            <tr>
+              <th>Hanzi</th>
+              <th>Pinyin</th>
+              <th>Arti</th>
+              <th style="width: 40px;">Suara</th>
+              <th style="width: 70px;">Status</th>
+            </tr>
+          </thead>
+          <tbody id="materiTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="counter" class="counter">Total item filtered: 0 | Total item Hafal: 0</div>
+
+  <!-- Footer -->
+  <footer>
+    复习 fùxí - 学无止境 (xué wú zhǐ jìng) - 加油 (jiā yóu)
+  </footer>
+
+  <!-- MODAL EDIT DATABASE (KHUSUS LAOSHI) -->
+  <div class="modal-overlay" id="dbModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle">Kelola Database</h2>
+        <button class="btn-close" onclick="closeModal()">✕</button>
+      </div>
+
+      <table class="db-table">
+        <thead>
+          <tr>
+            <th>Hanzi</th>
+            <th>Pinyin</th>
+            <th>Arti</th>
+            <th style="width: 70px;">HSK</th>
+            <th style="width: 40px;">Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+
+      <div class="excel-import">
+        <strong>📋 Quick Paste dari Excel (4 Kolom: Hanzi | Pinyin | Arti | HSK Angka)</strong>
+        <p style="font-size: 11px; color: #718096; margin-top: 2px;">Contoh isi HSK di Excel cukup tulis angka: 1, 2, 3, 4, 5, atau 6</p>
+        <textarea id="excelPaste" placeholder="Copy sel dari Excel lalu paste di sini..."></textarea>
+        <button class="btn-action btn-add" style="margin-top: 8px; font-size: 12px; padding: 6px 12px;" onclick="processExcelPaste()">+ Tambahkan Data Paste</button>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-action btn-add" onclick="addRow()">+ Tambah Baris Kosong</button>
+        <button class="btn-action btn-save" onclick="exportJsonForGithub()">💾 Generate JSON untuk GitHub</button>
+      </div>
+
+      <div id="exportArea" style="display:none; margin-top:15px; background:#edf2f7; padding:12px; border-radius:8px;">
+        <strong style="font-size:13px; color:#2d3748;">Copy teks JSON di bawah ini, lalu paste ke file <span id="currentFileName">kata.json</span> di GitHub:</strong>
+        <textarea id="jsonOutput" readonly style="width:100%; height:120px; font-family:monospace; font-size:11px; margin-top:8px; padding:6px;"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let rawDatabase = [];
+    let database = [];
+    let currentDbFile = 'kata.json';
+    let currentMode = 'hanzi';
+    let selectedHsk = 'all';
+    let currentUser = '';
+    let showAnswer = false;
+    let materiStatusFilter = 'all';
+
+    // LOCAL HAFAL TRACKING (localStorage)
+    let hafalSet = new Set();
+
+    // Flashcard History Tracking
+    let historyStack = [];
+    let historyIndex = -1;
+
+    // Auto Learning Tracking
+    let autoQueue = [];
+    let autoCurrentIdx = 0;
+    let isAutoPlaying = false;
+    let isAutoPaused = false;
+    let autoTimeoutId = null;
+    let autoHistoryList = []; // Menyimpan riwayat kartu sebelumnya
+
+    // Quiz Normal Tracking
+    let quizQuestions = [];
+    let quizCurrentIdx = 0;
+    let quizScore = 0;
+    let quizAnswered = false;
+    let quizTimerInterval = null;
+    let quizTimeLeft = 0;
+    let quizUserAnswers = [];
+
+    // Time Attack Tracking
+    let taStreak = 0;
+    let taStartTime = 0;
+    let taTotalTimeSec = 0;
+    let taTimerInterval = null;
+    let taTimeLimitMs = 10000;
+    let taTimeLeftMs = 10000;
+    let taCurrentItem = null;
+    let taCorrectHistory = [];
+    let taAnswered = false;
+
+    /* LOCAL HAFAL SYSTEM */
+    function loadHafalData() {
+      const saved = localStorage.getItem(`hafal_${currentUser}_${currentDbFile}`);
+      if (saved) {
+        hafalSet = new Set(JSON.parse(saved));
+      } else {
+        hafalSet = new Set();
+      }
+    }
+
+    function saveHafalData() {
+      localStorage.setItem(`hafal_${currentUser}_${currentDbFile}`, JSON.stringify(Array.from(hafalSet)));
+      updateCounterDisplay();
+    }
+
+    function getItemId(item) {
+      return (item.hanzi || '').trim();
+    }
+
+    function markCurrentAsHafal() {
+      if (historyIndex >= 0 && database[historyStack[historyIndex]]) {
+        const item = database[historyStack[historyIndex]];
+        hafalSet.add(getItemId(item));
+        saveHafalData();
+        renderCard();
+        renderMateriTable();
+      }
+    }
+
+    function unmarkCurrentAsHafal() {
+      if (historyIndex >= 0 && database[historyStack[historyIndex]]) {
+        const item = database[historyStack[historyIndex]];
+        hafalSet.delete(getItemId(item));
+        saveHafalData();
+        renderCard();
+        renderMateriTable();
+      }
+    }
+
+    function toggleHafalByHanzi(hanzi) {
+      if (hafalSet.has(hanzi)) {
+        hafalSet.delete(hanzi);
+      } else {
+        hafalSet.add(hanzi);
+      }
+      saveHafalData();
+      renderCard();
+      renderMateriTable();
+    }
+
+    function updateCounterDisplay() {
+      let hafalCountInFilter = 0;
+      database.forEach(item => {
+        if (hafalSet.has(getItemId(item))) {
+          hafalCountInFilter++;
+        }
+      });
+      document.getElementById('counter').innerText = `Total item filtered: ${database.length} | Total item Hafal: ${hafalCountInFilter}`;
+    }
+
+    /* TEXT TO SPEECH TERPISAH (MANDARIN VS INDONESIA) */
+    function speakTextWithCallback(text, lang, rateVal, onEndCallback) {
+      if (!('speechSynthesis' in window)) {
+        if (onEndCallback) onEndCallback();
+        return;
+      }
+
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = lang;
+      utterance.rate = rateVal;
+
+      utterance.onend = function() {
+        if (onEndCallback && isAutoPlaying && !isAutoPaused) {
+          onEndCallback();
+        }
+      };
+
+      utterance.onerror = function() {
+        if (onEndCallback && isAutoPlaying && !isAutoPaused) {
+          onEndCallback();
+        }
+      };
+
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function speakMandarin(text) {
+      const rate = parseFloat(document.getElementById('speechRateMandarin').value) || 0.8;
+      speakTextWithCallback(text, 'zh-CN', rate, null);
+    }
+
+    function speakIndo(text) {
+      const rate = parseFloat(document.getElementById('speechRateIndo').value) || 1.0;
+      speakTextWithCallback(text, 'id-ID', rate, null);
+    }
+
+    function speakCurrentCard(event) {
+      if (event) event.stopPropagation();
+      if (historyIndex >= 0 && database[historyStack[historyIndex]]) {
+        const item = database[historyStack[historyIndex]];
+        speakMandarin(item.hanzi);
+      }
+    }
+
+    /* AUTO LEARNING LOGIC */
+    function getAutoAvailableDatabase() {
+      const mode = document.getElementById('auto-hafal-filter').value;
+      let pool = [];
+
+      if (mode === 'unhafal') {
+        pool = database.filter(item => !hafalSet.has(getItemId(item)));
+      } else if (mode === 'hafal') {
+        pool = database.filter(item => hafalSet.has(getItemId(item)));
+      } else {
+        pool = [...database];
+      }
+
+      return pool;
+    }
+
+    function startAutoLearning() {
+      const activeAutoDb = getAutoAvailableDatabase();
+      const hafalModeText = document.getElementById('auto-hafal-filter').options[document.getElementById('auto-hafal-filter').selectedIndex].text;
+
+      if (activeAutoDb.length === 0) {
+        alert(`Daftar kata untuk mode "${hafalModeText}" kosong! Silakan pilih filter lain.`);
+        return;
+      }
+
+      const order = document.getElementById('autoOrder').value;
+      if (order === 'random') {
+        autoQueue = [...activeAutoDb].sort(() => 0.5 - Math.random());
+      } else {
+        autoQueue = [...activeAutoDb];
+      }
+
+      autoCurrentIdx = 0;
+      autoHistoryList = [];
+      isAutoPlaying = true;
+      isAutoPaused = false;
+
+      renderAutoHistory();
+      updateAutoPlayButtons('playing');
+      playNextAutoStep();
+    }
+
+    function pauseAutoLearning() {
+      if (!isAutoPlaying) return;
+      isAutoPaused = true;
+      window.speechSynthesis.cancel();
+      clearTimeout(autoTimeoutId);
+
+      updateAutoPlayButtons('paused');
+      document.getElementById('auto-main-text').innerText = autoQueue[autoCurrentIdx] ? autoQueue[autoCurrentIdx].hanzi + " (Paused ⏸️)" : "Paused ⏸️";
+    }
+
+    function resumeAutoLearning() {
+      if (!isAutoPlaying || !isAutoPaused) return;
+      isAutoPaused = false;
+
+      updateAutoPlayButtons('playing');
+      playNextAutoStep();
+    }
+
+    function stopAutoLearning() {
+      isAutoPlaying = false;
+      isAutoPaused = false;
+      window.speechSynthesis.cancel();
+      clearTimeout(autoTimeoutId);
+
+      updateAutoPlayButtons('stopped');
+
+      document.getElementById('auto-main-text').innerText = "Pemutaran Diberhentikan ⏹️";
+      document.getElementById('auto-sub-text').innerText = "--";
+      document.getElementById('auto-arti').innerText = "--";
+      document.getElementById('auto-progress-text').innerText = `Progres: 0 / ${autoQueue.length}`;
+      document.getElementById('autoHistoryContainer').style.display = 'none';
+    }
+
+    function updateAutoPlayButtons(state) {
+      const btnStart = document.getElementById('btnAutoStart');
+      const btnPause = document.getElementById('btnAutoPause');
+      const btnResume = document.getElementById('btnAutoResume');
+      const btnStop = document.getElementById('btnAutoStop');
+
+      if (state === 'playing') {
+        btnStart.style.display = 'none';
+        btnPause.style.display = 'block';
+        btnResume.style.display = 'none';
+        btnStop.style.display = 'block';
+      } else if (state === 'paused') {
+        btnStart.style.display = 'none';
+        btnPause.style.display = 'none';
+        btnResume.style.display = 'block';
+        btnStop.style.display = 'block';
+      } else { // stopped
+        btnStart.style.display = 'block';
+        btnPause.style.display = 'none';
+        btnResume.style.display = 'none';
+        btnStop.style.display = 'none';
+      }
+    }
+
+    function renderAutoHistory() {
+      const container = document.getElementById('autoHistoryContainer');
+      const listEl = document.getElementById('autoHistoryList');
+
+      if (autoHistoryList.length === 0) {
+        container.style.display = 'none';
+        return;
+      }
+
+      container.style.display = 'flex';
+      listEl.innerHTML = '';
+
+      // Tampilkan maksimal 2 kartu terakhir
+      const recentItems = autoHistoryList.slice(-2).reverse();
+
+      recentItems.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'auto-history-item';
+        div.innerHTML = `
+          <div>
+            <span class="auto-history-hanzi">${escapeHtml(item.hanzi)}</span>
+            <span class="auto-history-pinyin">(${escapeHtml(item.pinyin)})</span>
+          </div>
+          <div class="auto-history-arti">${escapeHtml(item.arti)}</div>
+        `;
+        listEl.appendChild(div);
+      });
+    }
+
+    function playNextAutoStep() {
+      if (!isAutoPlaying || isAutoPaused) return;
+
+      if (autoCurrentIdx >= autoQueue.length) {
+        document.getElementById('auto-main-text').innerText = "🎉 Selesai Semua Sesi!";
+        document.getElementById('auto-sub-text').innerText = "--";
+        document.getElementById('auto-arti').innerText = "--";
+        stopAutoLearning();
+        return;
+      }
+
+      const item = autoQueue[autoCurrentIdx];
+      document.getElementById('auto-card-hsk-badge').innerText = `HSK ${item.hsk || '1'}`;
+      document.getElementById('auto-main-text').innerText = item.hanzi;
+      document.getElementById('auto-sub-text').innerText = item.pinyin;
+      document.getElementById('auto-arti').innerText = item.arti;
+
+      document.getElementById('auto-progress-text').innerText = `Progres: ${autoCurrentIdx + 1} / ${autoQueue.length}`;
+
+      const rateMandarin = parseFloat(document.getElementById('speechRateMandarin').value) || 0.8;
+      const rateIndo = parseFloat(document.getElementById('speechRateIndo').value) || 1.0;
+      const delayMs = (parseFloat(document.getElementById('autoDelaySec').value) || 1.0) * 1000;
+
+      // STEP 1: Speak Hanzi (Mandarin)
+      speakTextWithCallback(item.hanzi, 'zh-CN', rateMandarin, () => {
+        if (!isAutoPlaying || isAutoPaused) return;
+
+        // STEP 2: Speak Arti (Bahasa Indonesia)
+        autoTimeoutId = setTimeout(() => {
+          if (!isAutoPlaying || isAutoPaused) return;
+          speakTextWithCallback(item.arti, 'id-ID', rateIndo, () => {
+            if (!isAutoPlaying || isAutoPaused) return;
+
+            // Simpan kartu yang selesai diputar ke riwayat
+            autoHistoryList.push(item);
+            renderAutoHistory();
+
+            // STEP 3: Delay lalu Next Card
+            autoTimeoutId = setTimeout(() => {
+              if (!isAutoPlaying || isAutoPaused) return;
+              autoCurrentIdx++;
+              playNextAutoStep();
+            }, delayMs);
+          });
+        }, 300);
+      });
+    }
+
+    function submitName() {
+      const input = document.getElementById('userNameInput').value.trim();
+      if (!input) {
+        alert("Silakan masukkan nama terlebih dahulu!");
+        return;
+      }
+      currentUser = input;
+      document.getElementById('currentUserDisplay').innerText = currentUser;
+      document.getElementById('welcomeOverlay').style.display = 'none';
+      loadHafalData();
+      loadDatabase();
+    }
+
+    function resetUserSession() {
+      document.getElementById('userNameInput').value = '';
+      document.getElementById('welcomeOverlay').style.display = 'flex';
+    }
+
+    async function loadDatabase() {
+      try {
+        const response = await fetch(currentDbFile);
+        rawDatabase = await response.json();
+        loadHafalData();
+        applyHskFilter();
+      } catch (error) {
+        document.getElementById('main-text').innerText = "Gagal membaca database!";
+      }
+    }
+
+    function applyHskFilter() {
+      if (selectedHsk === 'all') {
+        database = [...rawDatabase];
+      } else {
+        database = rawDatabase.filter(item => String(item.hsk || '1').trim() === selectedHsk);
+      }
+
+      updateCounterDisplay();
+      historyStack = [];
+      historyIndex = -1;
+      getNextCard();
+      renderMateriTable();
+
+      if (isAutoPlaying) {
+        stopAutoLearning();
+      }
+    }
+
+    function filterHskLevel() {
+      selectedHsk = document.getElementById('hskFilter').value;
+      applyHskFilter();
+    }
+
+    function switchMainView(view) {
+      if (isAutoPlaying && view !== 'autolearn') {
+        stopAutoLearning();
+      }
+
+      document.querySelectorAll('.btn-tab').forEach(btn => btn.classList.remove('active'));
+      
+      document.getElementById('view-flashcard').style.display = 'none';
+      document.getElementById('view-autolearn').style.display = 'none';
+      document.getElementById('view-quiz').style.display = 'none';
+      document.getElementById('view-timeattack').style.display = 'none';
+      document.getElementById('view-materi').style.display = 'none';
+
+      if (view === 'flashcard') {
+        document.getElementById('tab-flashcard').classList.add('active');
+        document.getElementById('view-flashcard').style.display = 'block';
+        document.getElementById('fc-controls').style.display = 'flex';
+        document.getElementById('auto-learn-controls').style.display = 'none';
+        document.getElementById('quiz-controls').style.display = 'none';
+      } else if (view === 'autolearn') {
+        document.getElementById('tab-autolearn').classList.add('active');
+        document.getElementById('view-autolearn').style.display = 'block';
+        document.getElementById('fc-controls').style.display = 'none';
+        document.getElementById('auto-learn-controls').style.display = 'flex';
+        document.getElementById('quiz-controls').style.display = 'none';
+        document.getElementById('auto-progress-text').innerText = `Progres: 0 / ${getAutoAvailableDatabase().length}`;
+      } else if (view === 'quiz') {
+        document.getElementById('tab-quiz').classList.add('active');
+        document.getElementById('view-quiz').style.display = 'flex';
+        document.getElementById('fc-controls').style.display = 'none';
+        document.getElementById('auto-learn-controls').style.display = 'none';
+        document.getElementById('quiz-controls').style.display = 'flex';
+        document.getElementById('quiz-normal-settings').style.display = 'flex';
+        document.getElementById('ta-settings').style.display = 'none';
+      } else if (view === 'timeattack') {
+        document.getElementById('tab-timeattack').classList.add('active');
+        document.getElementById('view-timeattack').style.display = 'flex';
+        document.getElementById('fc-controls').style.display = 'none';
+        document.getElementById('auto-learn-controls').style.display = 'none';
+        document.getElementById('quiz-controls').style.display = 'flex';
+        document.getElementById('quiz-normal-settings').style.display = 'none';
+        document.getElementById('ta-settings').style.display = 'flex';
+      } else if (view === 'materi') {
+        document.getElementById('tab-materi').classList.add('active');
+        document.getElementById('view-materi').style.display = 'flex';
+        document.getElementById('fc-controls').style.display = 'none';
+        document.getElementById('auto-learn-controls').style.display = 'none';
+        document.getElementById('quiz-controls').style.display = 'none';
+        renderMateriTable();
+      }
+    }
+
+    function setDatabase(dbFile, btnId) {
+      currentDbFile = dbFile;
+      document.querySelectorAll('#db-kata, #db-kalimat').forEach(btn => btn.classList.remove('active'));
+      document.getElementById(btnId).classList.add('active');
+      loadDatabase();
+    }
+
+    function setMode(mode, btnId) {
+      currentMode = mode;
+      document.querySelectorAll('#mode-hanzi, #mode-pinyin, #mode-arti').forEach(btn => btn.classList.remove('active'));
+      document.getElementById(btnId).classList.add('active');
+      renderCard();
+    }
+
+    /* FLASHCARD LOGIC */
+    function getNextCard() {
+      if (database.length === 0) {
+        document.getElementById('main-text').innerText = "Data Kosong";
+        document.getElementById('sub-text').innerText = "--";
+        document.getElementById('arti').innerText = "--";
+        return;
+      }
+
+      if (historyIndex < historyStack.length - 1) {
+        historyIndex++;
+      } else {
+        let randomIndex;
+        if (database.length > 1) {
+          const lastIdx = historyStack.length > 0 ? historyStack[historyStack.length - 1] : -1;
+          do { randomIndex = Math.floor(Math.random() * database.length); } while (randomIndex === lastIdx);
+        } else { randomIndex = 0; }
+        
+        historyStack.push(randomIndex);
+        historyIndex = historyStack.length - 1;
+      }
+
+      showAnswer = false;
+      renderCard();
+    }
+
+    function getPrevCard() {
+      if (historyIndex > 0) {
+        historyIndex--;
+        showAnswer = false;
+        renderCard();
+      }
+    }
+
+    function renderCard() {
+      if (historyIndex < 0 || !database[historyStack[historyIndex]]) return;
+
+      const item = database[historyStack[historyIndex]];
+      const isHafal = hafalSet.has(getItemId(item));
+
+      document.getElementById('card-hsk-badge').innerText = `HSK ${item.hsk || '1'}`;
+      document.getElementById('card-hafal-badge').style.display = isHafal ? 'block' : 'none';
+
+      const btnMark = document.getElementById('btnMarkHafal');
+      const btnUnmark = document.getElementById('btnUnmarkHafal');
+
+      if (isHafal) {
+        btnMark.style.display = 'none';
+        btnUnmark.style.display = 'block';
+      } else {
+        btnMark.style.display = 'block';
+        btnUnmark.style.display = 'none';
+      }
+
+      const mainTextEl = document.getElementById('main-text');
+      const subTextEl = document.getElementById('sub-text');
+      const artiEl = document.getElementById('arti');
+
+      if (currentMode === 'hanzi') {
+        mainTextEl.innerText = item.hanzi;
+        subTextEl.innerText = item.pinyin;
+        artiEl.innerText = item.arti;
+      } else if (currentMode === 'pinyin') {
+        mainTextEl.innerText = item.pinyin;
+        subTextEl.innerText = item.hanzi;
+        artiEl.innerText = item.arti;
+      } else if (currentMode === 'arti') {
+        mainTextEl.innerText = item.arti;
+        subTextEl.innerText = item.hanzi;
+        artiEl.innerText = item.pinyin;
+      }
+
+      updateVisibility();
+    }
+
+    function toggleAnswer() { showAnswer = !showAnswer; updateVisibility(); }
+
+    function updateVisibility() {
+      const subTextEl = document.getElementById('sub-text');
+      const artiEl = document.getElementById('arti');
+      if (showAnswer) {
+        subTextEl.className = 'sub-text visible';
+        artiEl.className = 'arti visible';
+      } else {
+        subTextEl.className = 'sub-text hidden';
+        artiEl.className = 'arti hidden';
+      }
+    }
+
+    /* MATERI TABLE LOGIC */
+    function setMateriStatusFilter(status) {
+      materiStatusFilter = status;
+      document.querySelectorAll('#mat-filter-all, #mat-filter-unhafal, #mat-filter-hafal').forEach(btn => btn.classList.remove('active'));
+      document.getElementById(`mat-filter-${status}`).classList.add('active');
+      renderMateriTable();
+    }
+
+    function renderMateriTable() {
+      const tbody = document.getElementById('materiTableBody');
+      const searchQuery = (document.getElementById('materiSearchInput').value || '').toLowerCase().trim();
+      tbody.innerHTML = '';
+
+      let filtered = database.filter(item => {
+        const isHafal = hafalSet.has(getItemId(item));
+        if (materiStatusFilter === 'hafal') return isHafal;
+        if (materiStatusFilter === 'unhafal') return !isHafal;
+        return true;
+      });
+
+      filtered = filtered.filter(item => {
+        const hanzi = (item.hanzi || '').toLowerCase();
+        const pinyin = (item.pinyin || '').toLowerCase();
+        const arti = (item.arti || '').toLowerCase();
+        return hanzi.includes(searchQuery) || pinyin.includes(searchQuery) || arti.includes(searchQuery);
+      });
+
+      if (filtered.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="5" style="text-align:center; color:#a0aec0; padding:20px;">Materi tidak ditemukan.</td></tr>`;
+        return;
+      }
+
+      filtered.forEach(item => {
+        const id = getItemId(item);
+        const isHafal = hafalSet.has(id);
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td style="font-weight:bold; font-size:16px;">${item.hanzi || ''}</td>
+          <td style="color:#2b6cb0;">${item.pinyin || ''}</td>
+          <td style="color:#2f855a;">${item.arti || ''}</td>
+          <td><button class="btn-speak-inline" onclick="speakMandarin('${escapeHtml(item.hanzi)}')">🔊</button></td>
+          <td>
+            <button class="btn-sm-action ${isHafal ? 'btn-sm-hafal' : 'btn-sm-unhafal'}" onclick="toggleHafalByHanzi('${escapeHtml(id)}')">
+              ${isHafal ? '✓ Hafal' : '+ Belum'}
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    /* NORMAL QUIZ LOGIC */
+    function getQuizAvailableDatabase() {
+      const mode = document.getElementById('quiz-hafal-filter').value;
+      let pool = [];
+
+      if (mode === 'unhafal') {
+        pool = database.filter(item => !hafalSet.has(getItemId(item)));
+      } else if (mode === 'hafal') {
+        pool = database.filter(item => hafalSet.has(getItemId(item)));
+      } else {
+        pool = [...database];
+      }
+
+      return pool;
+    }
+
+    function startQuiz() {
+      const activeQuizDb = getQuizAvailableDatabase();
+      const hafalModeText = document.getElementById('quiz-hafal-filter').options[document.getElementById('quiz-hafal-filter').selectedIndex].text;
+
+      if (activeQuizDb.length < 3) {
+        alert(`Daftar kata untuk mode "${hafalModeText}" minimal harus berisi 3 item! Silakan pilih filter lain atau tandai lebih banyak kata.`);
+        return;
+      }
+
+      const qType = document.getElementById('quiz-q-type').value;
+      const aType = document.getElementById('quiz-a-type').value;
+
+      if (qType === aType) {
+        alert("Tipe Soal dan Tipe Jawaban tidak boleh sama!");
+        return;
+      }
+
+      const reqCount = parseInt(document.getElementById('quiz-count').value) || 5;
+      const count = Math.min(reqCount, activeQuizDb.length);
+
+      let shuffled = [...activeQuizDb].sort(() => 0.5 - Math.random());
+      quizQuestions = shuffled.slice(0, count);
+
+      quizCurrentIdx = 0;
+      quizScore = 0;
+      quizUserAnswers = [];
+
+      document.getElementById('quiz-start-screen').style.display = 'none';
+      document.getElementById('quiz-result-screen').style.display = 'none';
+      document.getElementById('quiz-play-screen').style.display = 'block';
+
+      showQuizQuestion();
+    }
+
+    function showQuizQuestion() {
+      quizAnswered = false;
+      clearInterval(quizTimerInterval);
+
+      const qType = document.getElementById('quiz-q-type').value;
+      const aType = document.getElementById('quiz-a-type').value;
+      const item = quizQuestions[quizCurrentIdx];
+
+      document.getElementById('quiz-progress').innerText = `Soal ${quizCurrentIdx + 1} / ${quizQuestions.length}`;
+      document.getElementById('quiz-q-text').innerText = item[qType];
+
+      document.getElementById('btnSpeakQuiz').onclick = () => speakMandarin(item.hanzi);
+
+      let options = [item[aType]];
+      let others = database.filter(d => d[aType] !== item[aType]);
+      others.sort(() => 0.5 - Math.random());
+
+      options.push(others[0][aType]);
+      options.push(others[1][aType]);
+      options.sort(() => 0.5 - Math.random());
+
+      const optContainer = document.getElementById('quiz-options');
+      optContainer.innerHTML = '';
+
+      options.forEach(optText => {
+        const btn = document.createElement('button');
+        btn.className = 'btn-quiz-opt';
+        btn.innerText = optText;
+        btn.onclick = () => checkQuizAnswer(btn, optText, item[aType], item[qType]);
+        optContainer.appendChild(btn);
+      });
+
+      const secLimit = parseInt(document.getElementById('quiz-timer-sec').value) || 15;
+      quizTimeLeft = secLimit;
+      const timerText = document.getElementById('quiz-timer-text');
+      const timerBar = document.getElementById('timerBar');
+
+      timerText.innerText = `⏱ ${quizTimeLeft} detik`;
+      timerBar.style.width = '100%';
+
+      quizTimerInterval = setInterval(() => {
+        quizTimeLeft--;
+        timerText.innerText = `⏱ ${quizTimeLeft} detik`;
+        timerBar.style.width = `${(quizTimeLeft / secLimit) * 100}%`;
+
+        if (quizTimeLeft <= 0) {
+          clearInterval(quizTimerInterval);
+          handleTimeOut(item[aType], item[qType]);
+        }
+      }, 1000);
+    }
+
+    function checkQuizAnswer(selectedBtn, selectedText, correctText, questionText) {
+      if (quizAnswered) return;
+      quizAnswered = true;
+      clearInterval(quizTimerInterval);
+
+      const isCorrect = (selectedText === correctText);
+      quizUserAnswers.push({
+        question: questionText,
+        userAns: selectedText,
+        correctAns: correctText,
+        isCorrect: isCorrect
+      });
+
+      if (isCorrect) {
+        selectedBtn.classList.add('correct');
+        quizScore += Math.round(100 / quizQuestions.length);
+      } else {
+        selectedBtn.classList.add('wrong');
+        document.querySelectorAll('.btn-quiz-opt').forEach(b => {
+          if (b.innerText === correctText) b.classList.add('correct');
+        });
+      }
+
+      setTimeout(nextQuizStep, 1200);
+    }
+
+    function handleTimeOut(correctText, questionText) {
+      if (quizAnswered) return;
+      quizAnswered = true;
+
+      quizUserAnswers.push({
+        question: questionText,
+        userAns: "(Waktu Habis)",
+        correctAns: correctText,
+        isCorrect: false
+      });
+
+      document.querySelectorAll('.btn-quiz-opt').forEach(b => {
+        if (b.innerText === correctText) b.classList.add('correct');
+      });
+
+      setTimeout(nextQuizStep, 1200);
+    }
+
+    function nextQuizStep() {
+      quizCurrentIdx++;
+      if (quizCurrentIdx < quizQuestions.length) {
+        showQuizQuestion();
+      } else {
+        finishQuiz();
+      }
+    }
+
+    function cancelQuiz() {
+      clearInterval(quizTimerInterval);
+      document.getElementById('quiz-play-screen').style.display = 'none';
+      document.getElementById('quiz-start-screen').style.display = 'block';
+    }
+
+    function finishQuiz() {
+      clearInterval(quizTimerInterval);
+      document.getElementById('quiz-play-screen').style.display = 'none';
+      document.getElementById('quiz-result-screen').style.display = 'block';
+
+      if (quizScore > 100) quizScore = 100;
+      document.getElementById('quiz-final-score').innerText = `${quizScore} / 100`;
+
+      let summary = "";
+      if (quizScore >= 80) summary = `Hebat sekali ${currentUser}! Pemahaman kamu sangat bagus! 🎉`;
+      else if (quizScore >= 50) summary = `Cukup baik ${currentUser}! Tingkatkan lagi latihannya! 💪`;
+      else summary = `Jangan menyerah ${currentUser}, coba review flashcard lagi ya! 😉`;
+
+      document.getElementById('quiz-summary-text').innerText = summary;
+
+      const tbody = document.getElementById('reviewTableBody');
+      tbody.innerHTML = '';
+      quizUserAnswers.forEach(ans => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><strong>${ans.question}</strong></td>
+          <td class="${ans.isCorrect ? 'res-correct' : 'res-wrong'}">${ans.userAns}</td>
+          <td>${ans.correctAns}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    /* TIME ATTACK QUIZ LOGIC */
+    function startTimeAttack() {
+      const activeQuizDb = getQuizAvailableDatabase();
+      const hafalModeText = document.getElementById('quiz-hafal-filter').options[document.getElementById('quiz-hafal-filter').selectedIndex].text;
+
+      if (activeQuizDb.length < 3) {
+        alert(`Daftar kata untuk mode "${hafalModeText}" minimal harus berisi 3 item! Silakan pilih filter lain atau tandai lebih banyak kata.`);
+        return;
+      }
+
+      const qType = document.getElementById('quiz-q-type').value;
+      const aType = document.getElementById('quiz-a-type').value;
+
+      if (qType === aType) {
+        alert("Tipe Soal dan Tipe Jawaban tidak boleh sama!");
+        return;
+      }
+
+      taStreak = 0;
+      taCorrectHistory = [];
+      taStartTime = Date.now();
+
+      const reqSec = parseInt(document.getElementById('ta-timer-sec').value) || 10;
+      taTimeLimitMs = reqSec * 1000;
+
+      document.getElementById('ta-start-screen').style.display = 'none';
+      document.getElementById('ta-result-screen').style.display = 'none';
+      document.getElementById('ta-play-screen').style.display = 'block';
+
+      nextTimeAttackQuestion();
+    }
+
+    function nextTimeAttackQuestion() {
+      taAnswered = false;
+      clearInterval(taTimerInterval);
+
+      const activeQuizDb = getQuizAvailableDatabase();
+      const qType = document.getElementById('quiz-q-type').value;
+      const aType = document.getElementById('quiz-a-type').value;
+
+      const randomIndex = Math.floor(Math.random() * activeQuizDb.length);
+      taCurrentItem = activeQuizDb[randomIndex];
+
+      document.getElementById('ta-streak-text').innerText = `🔥 Streak: ${taStreak} Soal`;
+      document.getElementById('ta-q-text').innerText = taCurrentItem[qType];
+
+      document.getElementById('btnSpeakTa').onclick = () => speakMandarin(taCurrentItem.hanzi);
+
+      let options = [taCurrentItem[aType]];
+      let others = database.filter(d => d[aType] !== taCurrentItem[aType]);
+      others.sort(() => 0.5 - Math.random());
+
+      options.push(others[0][aType]);
+      options.push(others[1][aType]);
+      options.sort(() => 0.5 - Math.random());
+
+      const optContainer = document.getElementById('ta-options');
+      optContainer.innerHTML = '';
+
+      options.forEach(optText => {
+        const btn = document.createElement('button');
+        btn.className = 'btn-quiz-opt';
+        btn.innerText = optText;
+        btn.onclick = () => checkTimeAttackAnswer(btn, optText, taCurrentItem[aType], taCurrentItem[qType]);
+        optContainer.appendChild(btn);
+      });
+
+      taTimeLeftMs = taTimeLimitMs;
+      const timerText = document.getElementById('ta-timer-text');
+      const timerBar = document.getElementById('taTimerBar');
+
+      timerText.innerText = `⏱ ${(taTimeLeftMs / 1000).toFixed(1)}s`;
+      timerBar.style.width = '100%';
+
+      const updateInterval = 100;
+      taTimerInterval = setInterval(() => {
+        taTimeLeftMs -= updateInterval;
+        if (taTimeLeftMs < 0) taTimeLeftMs = 0;
+
+        timerText.innerText = `⏱ ${(taTimeLeftMs / 1000).toFixed(1)}s`;
+        timerBar.style.width = `${(taTimeLeftMs / taTimeLimitMs) * 100}%`;
+
+        if (taTimeLeftMs <= 0) {
+          clearInterval(taTimerInterval);
+          gameOverTimeAttack(`Kehabisan Waktu (${(taTimeLimitMs / 1000)} Detik Habis)!`);
+        }
+      }, updateInterval);
+    }
+
+    function checkTimeAttackAnswer(selectedBtn, selectedText, correctText, questionText) {
+      if (taAnswered) return;
+      taAnswered = true;
+      clearInterval(taTimerInterval);
+
+      if (selectedText === correctText) {
+        selectedBtn.classList.add('correct');
+        taStreak++;
+        taCorrectHistory.push({
+          no: taStreak,
+          question: questionText,
+          correctAns: correctText
+        });
+
+        setTimeout(nextTimeAttackQuestion, 400);
+      } else {
+        selectedBtn.classList.add('wrong');
+        document.querySelectorAll('#ta-options .btn-quiz-opt').forEach(b => {
+          if (b.innerText === correctText) b.classList.add('correct');
+        });
+
+        setTimeout(() => {
+          gameOverTimeAttack("Jawaban Salah!");
+        }, 1000);
+      }
+    }
+
+    function cancelTimeAttack() {
+      clearInterval(taTimerInterval);
+      document.getElementById('ta-play-screen').style.display = 'none';
+      document.getElementById('ta-start-screen').style.display = 'block';
+    }
+
+    function gameOverTimeAttack(reasonText) {
+      clearInterval(taTimerInterval);
+      taTotalTimeSec = Math.floor((Date.now() - taStartTime) / 1000);
+
+      document.getElementById('ta-play-screen').style.display = 'none';
+      document.getElementById('ta-result-screen').style.display = 'block';
+
+      document.getElementById('ta-over-reason').innerText = `Penyebab: ${reasonText}`;
+      document.getElementById('ta-final-streak').innerText = `${taStreak} Soal`;
+      document.getElementById('ta-final-time').innerText = `${taTotalTimeSec}s`;
+
+      const tbody = document.getElementById('taReviewTableBody');
+      tbody.innerHTML = '';
+
+      if (taCorrectHistory.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="3" style="text-align:center; color:#a0aec0; padding:15px;">Belum ada soal yang berhasil dijawab.</td></tr>`;
+      } else {
+        taCorrectHistory.forEach(item => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+            <td>#${item.no}</td>
+            <td><strong>${item.question}</strong></td>
+            <td class="res-correct">${item.correctAns}</td>
+          `;
+          tbody.appendChild(tr);
+        });
+      }
+    }
+
+    /* MODAL LAOSHI LOGIN & EDITOR */
+    function openLoginModal() {
+      const uid = prompt("Masukkan UID:");
+      const pass = prompt("Masukkan Password:");
+
+      if (uid === 'laoshi' && pass === 'nihao') {
+        openModal();
+      } else {
+        alert("UID atau Password salah!");
+      }
+    }
+
+    function openModal() {
+      document.getElementById('modalTitle').innerText = `Kelola Database (${currentDbFile})`;
+      document.getElementById('currentFileName').innerText = currentDbFile;
+      document.getElementById('exportArea').style.display = 'none';
+      renderTable();
+      document.getElementById('dbModal').style.display = 'flex';
+    }
+
+    function closeModal() { document.getElementById('dbModal').style.display = 'none'; }
+
+    function renderTable() {
+      const tbody = document.getElementById('tableBody');
+      tbody.innerHTML = '';
+      rawDatabase.forEach((item, index) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><input type="text" value="${escapeHtml(item.hanzi)}" data-key="hanzi" data-index="${index}"></td>
+          <td><input type="text" value="${escapeHtml(item.pinyin)}" data-key="pinyin" data-index="${index}"></td>
+          <td><input type="text" value="${escapeHtml(item.arti)}" data-key="arti" data-index="${index}"></td>
+          <td><input type="number" min="1" max="6" value="${escapeHtml(String(item.hsk || '1'))}" data-key="hsk" data-index="${index}" style="text-align:center;"></td>
+          <td><button class="btn-delete" onclick="deleteRow(${index})">🗑</button></td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function escapeHtml(text) { return (text || '').replace(/"/g, '&quot;'); }
+
+    function addRow() {
+      rawDatabase.push({ hanzi: '', pinyin: '', arti: '', hsk: '1' });
+      renderTable();
+    }
+
+    function deleteRow(index) {
+      rawDatabase.splice(index, 1);
+      renderTable();
+    }
+
+    function processExcelPaste() {
+      const text = document.getElementById('excelPaste').value.trim();
+      if (!text) return;
+
+      const rows = text.split('\n');
+      rows.forEach(row => {
+        const cols = row.split('\t');
+        if (cols.length >= 2) {
+          rawDatabase.push({
+            hanzi: (cols[0] || '').trim(),
+            pinyin: (cols[1] || '').trim(),
+            arti: (cols[2] || '').trim(),
+            hsk: String((cols[3] || '1')).trim()
+          });
+        }
+      });
+
+      document.getElementById('excelPaste').value = '';
+      renderTable();
+    }
+
+    function exportJsonForGithub() {
+      const inputs = document.querySelectorAll('#tableBody input');
+      inputs.forEach(input => {
+        const idx = input.getAttribute('data-index');
+        const key = input.getAttribute('data-key');
+        rawDatabase[idx][key] = input.value.trim();
+      });
+
+      rawDatabase = rawDatabase.filter(item => item.hanzi || item.pinyin || item.arti);
+
+      const jsonString = JSON.stringify(rawDatabase, null, 2);
+      document.getElementById('jsonOutput').value = jsonString;
+      document.getElementById('exportArea').style.display = 'block';
+
+      applyHskFilter();
+    }
+
+    window.onload = function() {
+      document.getElementById('welcomeOverlay').style.display = 'flex';
+    };
+  </script>
+</body>
+</html>

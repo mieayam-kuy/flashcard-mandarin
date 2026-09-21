@@ -1,0 +1,1892 @@
+[
+  {
+    "hanzi": "你好",
+    "pinyin": "nǐ hǎo",
+    "arti": "Halo / Apa kabar",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "谢谢你",
+    "pinyin": "xiè xie nǐ",
+    "arti": "Terima kasih",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我喜欢吃苹果",
+    "pinyin": "wǒ xǐ huān chī píng guǒ",
+    "arti": "Saya suka makan apel",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "今天天气很好",
+    "pinyin": "jīn tiān tiān qì hěn hǎo",
+    "arti": "Hari ini cuaca sangat bagus",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "请问，这个多少钱？",
+    "pinyin": "qǐng wèn, zhè ge duō shao qián?",
+    "arti": "Permisi, berapa harga barang ini?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你好！",
+    "pinyin": "Nǐ hǎo!",
+    "arti": "Halo!",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你好！你叫什么名字？",
+    "pinyin": "Nǐ hǎo! Nǐ jiào shénme míngzi?",
+    "arti": "Halo! Siapa namamu?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我叫安迪。你呢？",
+    "pinyin": "Wǒ jiào Āndí. Nǐ ne?",
+    "arti": "Nama saya Andy. Kalau kamu?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我叫大卫。",
+    "pinyin": "Wǒ jiào Dàwèi.",
+    "arti": "Nama saya David.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你是学生吗？",
+    "pinyin": "Nǐ shì xuésheng ma?",
+    "arti": "Apakah kamu murid?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "是，我是学生。你呢？",
+    "pinyin": "Shì, wǒ shì xuésheng. Nǐ ne?",
+    "arti": "Ya, saya murid. Kalau kamu?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我也是学生。",
+    "pinyin": "Wǒ yě shì xuésheng.",
+    "arti": "Saya juga murid.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你学习汉语吗？",
+    "pinyin": "Nǐ xuéxí Hànyǔ ma?",
+    "arti": "Apakah kamu belajar Mandarin?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "是，我学汉语。",
+    "pinyin": "Shì, wǒ xué Hànyǔ.",
+    "arti": "Ya, saya belajar Mandarin.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你的汉语怎么样？",
+    "pinyin": "Nǐ de Hànyǔ zěnmeyàng?",
+    "arti": "Bagaimana bahasa Mandarinmu?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我的汉语不太好。",
+    "pinyin": "Wǒ de Hànyǔ bú tài hǎo.",
+    "arti": "Bahasa Mandarin saya tidak terlalu bagus.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "没关系，我们一起学习。",
+    "pinyin": "Méi guānxi, wǒmen yìqǐ xuéxí.",
+    "arti": "Tidak apa-apa, kita belajar bersama.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "好，谢谢！",
+    "pinyin": "Hǎo, xièxie!",
+    "arti": "Baik, terima kasih!",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你家有几个人？",
+    "pinyin": "Nǐ jiā yǒu jǐ ge rén?",
+    "arti": "Di keluargamu ada berapa orang?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我家有六个人。",
+    "pinyin": "Wǒ jiā yǒu liù ge rén.",
+    "arti": "Keluarga saya ada enam orang.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "都有谁？",
+    "pinyin": "Dōu yǒu shéi?",
+    "arti": "Siapa saja?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "有爸爸、妈妈、哥哥、姐姐、弟弟和我。",
+    "pinyin": "Yǒu bàba, māma, gēge, jiějie, dìdi hé wǒ.",
+    "arti": "Ada ayah, ibu, kakak laki-laki, kakak perempuan, adik laki-laki dan saya.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你的爸爸做什么工作？",
+    "pinyin": "Nǐ de bàba zuò shénme gōngzuò?",
+    "arti": "Ayahmu bekerja sebagai apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我的爸爸在公司工作。",
+    "pinyin": "Wǒ de bàba zài gōngsī gōngzuò.",
+    "arti": "Ayah saya bekerja di perusahaan.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你的妈妈呢？",
+    "pinyin": "Nǐ de māma ne?",
+    "arti": "Kalau ibumu?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我的妈妈是护士。",
+    "pinyin": "Wǒ de māma shì hùshi.",
+    "arti": "Ibu saya adalah suster.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你的哥哥高吗？",
+    "pinyin": "Nǐ de gēge gāo ma?",
+    "arti": "Apakah kakak laki-lakimu tinggi?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "很高。",
+    "pinyin": "Hěn gāo.",
+    "arti": "Sangat tinggi.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你的姐姐呢？",
+    "pinyin": "Nǐ de jiějie ne?",
+    "arti": "Bagaimana dengan kakak perempuanmu?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我的姐姐很漂亮。",
+    "pinyin": "Wǒ de jiějie hěn piàoliang.",
+    "arti": "Kakak perempuan saya sangat cantik.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你有妹妹吗？",
+    "pinyin": "Nǐ yǒu mèimei ma?",
+    "arti": "Apakah kamu punya adik perempuan?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "有，我还有一个妹妹。",
+    "pinyin": "Yǒu, wǒ hái yǒu yí ge mèimei.",
+    "arti": "Ada, saya juga punya seorang adik perempuan.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你的爷爷呢？",
+    "pinyin": "Nǐ de yéye ne?",
+    "arti": "Bagaimana dengan kakekmu?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我的爷爷住在农村。",
+    "pinyin": "Wǒ de yéye zhù zài nóngcūn.",
+    "arti": "Kakek saya tinggal di desa.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你现在在哪儿？",
+    "pinyin": "Nǐ xiànzài zài nǎr?",
+    "arti": "Kamu sekarang di mana?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我在学校。",
+    "pinyin": "Wǒ zài xuéxiào.",
+    "arti": "Saya di sekolah.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你在哪个班？",
+    "pinyin": "Nǐ zài nǎ ge bān?",
+    "arti": "Kamu di kelas berapa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我在一班。",
+    "pinyin": "Wǒ zài yī bān.",
+    "arti": "Saya di kelas satu.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你今天上课吗？",
+    "pinyin": "Nǐ jīntiān shàngkè ma?",
+    "arti": "Apakah kamu belajar hari ini?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "是。",
+    "pinyin": "Shì.",
+    "arti": "Ya.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "什么时候上课？",
+    "pinyin": "Shénme shíhou shàngkè?",
+    "arti": "Kapan mulai pelajaran?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "上午八点上课。",
+    "pinyin": "Shàngwǔ bā diǎn shàngkè.",
+    "arti": "Mulai pelajaran jam 8 pagi.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你每天都上课吗？",
+    "pinyin": "Nǐ měitiān dōu shàngkè ma?",
+    "arti": "Apakah kamu belajar setiap hari?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "是，我每天都上课。",
+    "pinyin": "Shì, wǒ měitiān dōu shàngkè.",
+    "arti": "Ya, saya belajar setiap hari.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你喜欢什么课？",
+    "pinyin": "Nǐ xǐhuan shénme kè?",
+    "arti": "Kamu suka pelajaran apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我喜欢汉语和数学。",
+    "pinyin": "Wǒ xǐhuan Hànyǔ hé shùxué.",
+    "arti": "Saya suka Mandarin dan matematika.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你觉得汉语难吗？",
+    "pinyin": "Nǐ juéde Hànyǔ nán ma?",
+    "arti": "Menurutmu Mandarin sulit?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "有一点儿难，但是很好。",
+    "pinyin": "Yǒu yìdiǎnr nán, dànshì hěn hǎo.",
+    "arti": "Sedikit sulit, tetapi sangat bagus.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你去哪儿？",
+    "pinyin": "Nǐ qù nǎr?",
+    "arti": "Kamu mau pergi ke mana?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我去图书馆。",
+    "pinyin": "Wǒ qù túshūguǎn.",
+    "arti": "Saya pergi ke perpustakaan.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你去图书馆做什么？",
+    "pinyin": "Nǐ qù túshūguǎn zuò shénme?",
+    "arti": "Kamu pergi ke perpustakaan untuk apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我去看书。",
+    "pinyin": "Wǒ qù kàn shū.",
+    "arti": "Saya pergi membaca buku.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你要看什么书？",
+    "pinyin": "Nǐ yào kàn shénme shū?",
+    "arti": "Kamu ingin membaca buku apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我要看汉语书。",
+    "pinyin": "Wǒ yào kàn Hànyǔ shū.",
+    "arti": "Saya ingin membaca buku Mandarin.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你的书包在哪里？",
+    "pinyin": "Nǐ de shūbāo zài nǎlǐ?",
+    "arti": "Tas sekolahmu di mana?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我的书包在桌子上面。",
+    "pinyin": "Wǒ de shūbāo zài zhuōzi shàngmiàn.",
+    "arti": "Tas saya ada di atas meja.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "铅笔呢？",
+    "pinyin": "Qiānbǐ ne?",
+    "arti": "Bagaimana dengan pensilnya?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "铅笔在书包里面。",
+    "pinyin": "Qiānbǐ zài shūbāo lǐmiàn.",
+    "arti": "Pensil ada di dalam tas.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "橡皮呢？",
+    "pinyin": "Xiàngpí ne?",
+    "arti": "Penghapusnya?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "在桌子下面。",
+    "pinyin": "Zài zhuōzi xiàmiàn.",
+    "arti": "Ada di bawah meja.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "椅子在哪里？",
+    "pinyin": "Yǐzi zài nǎlǐ?",
+    "arti": "Kursinya di mana?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "椅子在桌子后面。",
+    "pinyin": "Yǐzi zài zhuōzi hòumiàn.",
+    "arti": "Kursi ada di belakang meja.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你每天几点起床？",
+    "pinyin": "Nǐ měitiān jǐ diǎn qǐchuáng?",
+    "arti": "Setiap hari kamu bangun jam berapa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我早上六点起床。",
+    "pinyin": "Wǒ zǎoshàng liù diǎn qǐchuáng.",
+    "arti": "Saya bangun jam enam pagi.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你几点吃早饭？",
+    "pinyin": "Nǐ jǐ diǎn chī zǎofàn?",
+    "arti": "Kamu sarapan jam berapa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "六点半。",
+    "pinyin": "Liù diǎn bàn.",
+    "arti": "Jam setengah tujuh.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你吃什么？",
+    "pinyin": "Nǐ chī shénme?",
+    "arti": "Kamu makan apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我吃面包，喝牛奶。",
+    "pinyin": "Wǒ chī miànbāo, hē niúnǎi.",
+    "arti": "Saya makan roti dan minum susu.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你上午做什么？",
+    "pinyin": "Nǐ shàngwǔ zuò shénme?",
+    "arti": "Apa yang kamu lakukan pagi/siang?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我上午上课。",
+    "pinyin": "Wǒ shàngwǔ shàngkè.",
+    "arti": "Saya belajar pada pagi/siang hari.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "下午呢？",
+    "pinyin": "Xiàwǔ ne?",
+    "arti": "Bagaimana sore?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "下午我去学校。",
+    "pinyin": "Xiàwǔ wǒ qù xuéxiào.",
+    "arti": "Sore saya pergi ke sekolah.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "晚上呢？",
+    "pinyin": "Wǎnshàng ne?",
+    "arti": "Bagaimana malam?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "晚上我做作业。",
+    "pinyin": "Wǎnshàng wǒ zuò zuòyè.",
+    "arti": "Malam saya mengerjakan PR.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你几点睡觉？",
+    "pinyin": "Nǐ jǐ diǎn shuìjiào?",
+    "arti": "Kamu tidur jam berapa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "十一点。",
+    "pinyin": "Shíyī diǎn.",
+    "arti": "Jam sebelas.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你饿吗？",
+    "pinyin": "Nǐ è ma?",
+    "arti": "Kamu lapar?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "是，我很饿。",
+    "pinyin": "Shì, wǒ hěn è.",
+    "arti": "Ya, saya sangat lapar.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你要吃什么？",
+    "pinyin": "Nǐ yào chī shénme?",
+    "arti": "Kamu mau makan apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我要吃面条。",
+    "pinyin": "Wǒ yào chī miàntiáo.",
+    "arti": "Saya mau makan mie.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你要喝什么？",
+    "pinyin": "Nǐ yào hē shénme?",
+    "arti": "Kamu mau minum apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我要喝可口可乐。",
+    "pinyin": "Wǒ yào hē Kěkǒukělè.",
+    "arti": "Saya mau minum Coca-Cola.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你喜欢芒果吗？",
+    "pinyin": "Nǐ xǐhuan mángguǒ ma?",
+    "arti": "Kamu suka mangga?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "喜欢，我很喜欢芒果。",
+    "pinyin": "Xǐhuan, wǒ hěn xǐhuan mángguǒ.",
+    "arti": "Suka, saya sangat suka mangga.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你喜欢香蕉吗？",
+    "pinyin": "Nǐ xǐhuan xiāngjiāo ma?",
+    "arti": "Kamu suka pisang?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "喜欢。",
+    "pinyin": "Xǐhuan.",
+    "arti": "Suka.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "葡萄呢？",
+    "pinyin": "Pútáo ne?",
+    "arti": "Bagaimana dengan anggur?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "也喜欢。",
+    "pinyin": "Yě xǐhuan.",
+    "arti": "Juga suka.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "辣椒呢？",
+    "pinyin": "Làjiāo ne?",
+    "arti": "Bagaimana dengan sambal?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我不知道，我要尝一点儿。",
+    "pinyin": "Wǒ bù zhīdào, wǒ yào cháng yìdiǎnr.",
+    "arti": "Saya tidak tahu, saya mau mencicipi sedikit.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你的爱好是什么？",
+    "pinyin": "Nǐ de àihào shì shénme?",
+    "arti": "Apa hobimu?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我的爱好是运动。",
+    "pinyin": "Wǒ de àihào shì yùndòng.",
+    "arti": "Hobi saya adalah olahraga.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你喜欢什么运动？",
+    "pinyin": "Nǐ xǐhuan shénme yùndòng?",
+    "arti": "Kamu suka olahraga apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我喜欢游泳。",
+    "pinyin": "Wǒ xǐhuan yóuyǒng.",
+    "arti": "Saya suka berenang.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你会打篮球吗？",
+    "pinyin": "Nǐ huì dǎ lánqiú ma?",
+    "arti": "Apakah kamu bisa bermain basket?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "会。",
+    "pinyin": "Huì.",
+    "arti": "Bisa.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你经常打篮球吗？",
+    "pinyin": "Nǐ jīngcháng dǎ lánqiú ma?",
+    "arti": "Apakah kamu sering bermain basket?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "是，我经常打篮球。",
+    "pinyin": "Shì, wǒ jīngcháng dǎ lánqiú.",
+    "arti": "Ya, saya sering bermain basket.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你会踢足球吗？",
+    "pinyin": "Nǐ huì tī zúqiú ma?",
+    "arti": "Apakah kamu bisa bermain sepak bola?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "会一点儿。",
+    "pinyin": "Huì yìdiǎnr.",
+    "arti": "Bisa sedikit.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你打网球吗？",
+    "pinyin": "Nǐ dǎ wǎngqiú ma?",
+    "arti": "Apakah kamu bermain tenis?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "不打。",
+    "pinyin": "Bù dǎ.",
+    "arti": "Tidak.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你喜欢听音乐吗？",
+    "pinyin": "Nǐ xǐhuan tīng yīnyuè ma?",
+    "arti": "Apakah kamu suka mendengarkan musik?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "很喜欢。",
+    "pinyin": "Hěn xǐhuan.",
+    "arti": "Sangat suka.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我们一起听音乐吧。",
+    "pinyin": "Wǒmen yìqǐ tīng yīnyuè ba.",
+    "arti": "Mari kita dengarkan musik bersama.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你工作吗？",
+    "pinyin": "Nǐ gōngzuò ma?",
+    "arti": "Apakah kamu bekerja?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "是，我工作。",
+    "pinyin": "Shì, wǒ gōngzuò.",
+    "arti": "Ya, saya bekerja.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你在哪里工作？",
+    "pinyin": "Nǐ zài nǎlǐ gōngzuò?",
+    "arti": "Kamu bekerja di mana?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我在公司工作。",
+    "pinyin": "Wǒ zài gōngsī gōngzuò.",
+    "arti": "Saya bekerja di perusahaan.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你几点上班？",
+    "pinyin": "Nǐ jǐ diǎn shàngbān?",
+    "arti": "Kamu mulai kerja jam berapa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "上午八点上班。",
+    "pinyin": "Shàngwǔ bā diǎn shàngbān.",
+    "arti": "Saya mulai kerja jam 8 pagi.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "几点下班？",
+    "pinyin": "Jǐ diǎn xiàbān?",
+    "arti": "Pulang kerja jam berapa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "下午五点下班。",
+    "pinyin": "Xiàwǔ wǔ diǎn xiàbān.",
+    "arti": "Pulang kerja jam 5 sore.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你的工作忙吗？",
+    "pinyin": "Nǐ de gōngzuò máng ma?",
+    "arti": "Apakah pekerjaanmu sibuk?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "很忙。",
+    "pinyin": "Hěn máng.",
+    "arti": "Sangat sibuk.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你是记者吗？",
+    "pinyin": "Nǐ shì jìzhě ma?",
+    "arti": "Apakah kamu reporter?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "不是。",
+    "pinyin": "Bú shì.",
+    "arti": "Bukan.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你会说汉语吗？",
+    "pinyin": "Nǐ huì shuō Hànyǔ ma?",
+    "arti": "Apakah kamu bisa berbicara Mandarin?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "会一点儿。",
+    "pinyin": "Huì yìdiǎnr.",
+    "arti": "Bisa sedikit.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你好，我可以问你的电话号码吗？",
+    "pinyin": "Nǐ hǎo, wǒ kěyǐ wèn nǐ de diànhuà hàomǎ ma?",
+    "arti": "Halo, boleh saya bertanya nomor teleponmu?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "可以。",
+    "pinyin": "Kěyǐ.",
+    "arti": "Boleh.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你的电话号码是多少？",
+    "pinyin": "Nǐ de diànhuà hàomǎ shì duōshao?",
+    "arti": "Berapa nomor teleponmu?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "是八八六六三二一零。",
+    "pinyin": "Shì bā bā liù liù sān èr yī líng.",
+    "arti": "88663210.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "好，我知道了。",
+    "pinyin": "Hǎo, wǒ zhīdào le.",
+    "arti": "Baik, saya sudah tahu.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "以后给我打电话。",
+    "pinyin": "Yǐhòu gěi wǒ dǎ diànhuà.",
+    "arti": "Nanti telepon saya.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "好。谢谢！",
+    "pinyin": "Hǎo. Xièxie!",
+    "arti": "Baik. Terima kasih!",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "今天你去哪儿？",
+    "pinyin": "Jīntiān nǐ qù nǎr?",
+    "arti": "Hari ini kamu pergi ke mana?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我去商场。",
+    "pinyin": "Wǒ qù shāngchǎng.",
+    "arti": "Saya pergi ke mall.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "去商场做什么？",
+    "pinyin": "Qù shāngchǎng zuò shénme?",
+    "arti": "Pergi ke mall untuk apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我要买礼物。",
+    "pinyin": "Wǒ yào mǎi lǐwù.",
+    "arti": "Saya ingin membeli hadiah.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "给谁买？",
+    "pinyin": "Gěi shéi mǎi?",
+    "arti": "Membeli untuk siapa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "给我妈妈买。",
+    "pinyin": "Gěi wǒ māma mǎi.",
+    "arti": "Untuk ibu saya.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你要买什么礼物？",
+    "pinyin": "Nǐ yào mǎi shénme lǐwù?",
+    "arti": "Kamu mau membeli hadiah apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我要买衣服。",
+    "pinyin": "Wǒ yào mǎi yīfu.",
+    "arti": "Saya mau membeli baju.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "什么颜色？",
+    "pinyin": "Shénme yánsè?",
+    "arti": "Warna apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "蓝色或者白色。",
+    "pinyin": "Lánsè huòzhě báisè.",
+    "arti": "Biru atau putih.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你觉得蓝色怎么样？",
+    "pinyin": "Nǐ juéde lánsè zěnmeyàng?",
+    "arti": "Menurutmu bagaimana warna biru?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "很好。",
+    "pinyin": "Hěn hǎo.",
+    "arti": "Sangat bagus.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "白色呢？",
+    "pinyin": "Báisè ne?",
+    "arti": "Bagaimana dengan putih?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "白色也很好。",
+    "pinyin": "Báisè yě hěn hǎo.",
+    "arti": "Putih juga sangat bagus.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "请问，图书馆在哪儿？",
+    "pinyin": "Qǐngwèn, túshūguǎn zài nǎr?",
+    "arti": "Permisi, perpustakaan di mana?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "图书馆在学校里面。",
+    "pinyin": "Túshūguǎn zài xuéxiào lǐmiàn.",
+    "arti": "Perpustakaan ada di dalam sekolah.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "学校在哪儿？",
+    "pinyin": "Xuéxiào zài nǎr?",
+    "arti": "Sekolah ada di mana?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "在街的左边。",
+    "pinyin": "Zài jiē de zuǒbian.",
+    "arti": "Di sebelah kiri jalan.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "书店呢？",
+    "pinyin": "Shūdiàn ne?",
+    "arti": "Kalau toko buku?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "书店在图书馆的右边。",
+    "pinyin": "Shūdiàn zài túshūguǎn de yòubian.",
+    "arti": "Toko buku berada di sebelah kanan perpustakaan.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "药店在哪里？",
+    "pinyin": "Yàodiàn zài nǎlǐ?",
+    "arti": "Toko obat di mana?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "药店在商场前面。",
+    "pinyin": "Yàodiàn zài shāngchǎng qiánmiàn.",
+    "arti": "Toko obat ada di depan mall.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "饭店呢？",
+    "pinyin": "Fàndiàn ne?",
+    "arti": "Kalau hotel?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "饭店在商场后面。",
+    "pinyin": "Fàndiàn zài shāngchǎng hòumiàn.",
+    "arti": "Hotel ada di belakang mall.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你从哪儿来？",
+    "pinyin": "Nǐ cóng nǎr lái?",
+    "arti": "Kamu datang dari mana?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我从雅加达来。",
+    "pinyin": "Wǒ cóng Yǎjiādá lái.",
+    "arti": "Saya datang dari Jakarta.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你住在雅加达吗？",
+    "pinyin": "Nǐ zhù zài Yǎjiādá ma?",
+    "arti": "Apakah kamu tinggal di Jakarta?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "是，我住在雅加达。",
+    "pinyin": "Shì, wǒ zhù zài Yǎjiādá.",
+    "arti": "Ya, saya tinggal di Jakarta.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你去过泗水吗？",
+    "pinyin": "Nǐ qù guo Sìshuǐ ma?",
+    "arti": "Apakah kamu pernah ke Surabaya?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "去过。",
+    "pinyin": "Qù guo.",
+    "arti": "Pernah.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "泗水怎么样？",
+    "pinyin": "Sìshuǐ zěnmeyàng?",
+    "arti": "Bagaimana Surabaya?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "很好。",
+    "pinyin": "Hěn hǎo.",
+    "arti": "Sangat bagus.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你想去上海吗？",
+    "pinyin": "Nǐ xiǎng qù Shànghǎi ma?",
+    "arti": "Apakah kamu ingin pergi ke Shanghai?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "想。",
+    "pinyin": "Xiǎng.",
+    "arti": "Ingin.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "香港呢？",
+    "pinyin": "Xiānggǎng ne?",
+    "arti": "Bagaimana dengan Hong Kong?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我也想去香港。",
+    "pinyin": "Wǒ yě xiǎng qù Xiānggǎng.",
+    "arti": "Saya juga ingin pergi ke Hong Kong.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你今天怎么了？",
+    "pinyin": "Nǐ jīntiān zěnme le?",
+    "arti": "Kamu kenapa hari ini?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我身体不舒服。",
+    "pinyin": "Wǒ shēntǐ bù shūfu.",
+    "arti": "Badan saya kurang enak.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你生气吗？",
+    "pinyin": "Nǐ shēngqì ma?",
+    "arti": "Apakah kamu marah?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "不是，我身体不舒服。",
+    "pinyin": "Bú shì, wǒ shēntǐ bù shūfu.",
+    "arti": "Bukan, badan saya kurang enak.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你吃药了吗？",
+    "pinyin": "Nǐ chī yào le ma?",
+    "arti": "Apakah kamu sudah minum obat?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "吃了。",
+    "pinyin": "Chī le.",
+    "arti": "Sudah.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你为什么迟到？",
+    "pinyin": "Nǐ wèishénme chídào?",
+    "arti": "Mengapa kamu terlambat?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "因为路上堵车。",
+    "pinyin": "Yīnwèi lùshang dǔchē.",
+    "arti": "Karena jalanan macet.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "现在还堵车吗？",
+    "pinyin": "Xiànzài hái dǔchē ma?",
+    "arti": "Sekarang masih macet?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "是，现在路上很堵。",
+    "pinyin": "Shì, xiànzài lùshang hěn dǔ.",
+    "arti": "Ya, sekarang jalanan sangat macet.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你喜欢什么颜色？",
+    "pinyin": "Nǐ xǐhuan shénme yánsè?",
+    "arti": "Kamu suka warna apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我喜欢蓝色。",
+    "pinyin": "Wǒ xǐhuan lánsè.",
+    "arti": "Saya suka biru.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你喜欢绿色吗？",
+    "pinyin": "Nǐ xǐhuan lǜsè ma?",
+    "arti": "Kamu suka hijau?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "喜欢。",
+    "pinyin": "Xǐhuan.",
+    "arti": "Suka.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "蓝色和绿色，你觉得哪个漂亮？",
+    "pinyin": "Lánsè hé lǜsè, nǐ juéde nǎge piàoliang?",
+    "arti": "Di antara biru dan hijau, menurutmu mana yang lebih bagus?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我觉得蓝色漂亮。",
+    "pinyin": "Wǒ juéde lánsè piàoliang.",
+    "arti": "Menurut saya biru bagus.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "这个蓝色太深。",
+    "pinyin": "Zhège lánsè tài shēn.",
+    "arti": "Warna biru ini terlalu gelap.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "那个呢？",
+    "pinyin": "Nàge ne?",
+    "arti": "Bagaimana yang itu?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "那个颜色比较浅。",
+    "pinyin": "Nàge yánsè bǐjiào qiǎn.",
+    "arti": "Warna yang itu lebih terang.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我觉得那个方便。",
+    "pinyin": "Wǒ juéde nàge fāngbiàn.",
+    "arti": "Menurut saya yang itu lebih praktis.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "明天你有时间吗？",
+    "pinyin": "Míngtiān nǐ yǒu shíjiān ma?",
+    "arti": "Besok kamu ada waktu?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "有。怎么了？",
+    "pinyin": "Yǒu. Zěnme le?",
+    "arti": "Ada. Kenapa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我们去看电影吧。",
+    "pinyin": "Wǒmen qù kàn diànyǐng ba.",
+    "arti": "Mari kita pergi menonton film.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "好啊！什么时候？",
+    "pinyin": "Hǎo a! Shénme shíhou?",
+    "arti": "Oke! Kapan?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "明天下午。",
+    "pinyin": "Míngtiān xiàwǔ.",
+    "arti": "Besok sore.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "几点？",
+    "pinyin": "Jǐ diǎn?",
+    "arti": "Jam berapa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "下午三点半。",
+    "pinyin": "Xiàwǔ sān diǎn bàn.",
+    "arti": "Jam setengah empat sore.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "好，我们一起去。",
+    "pinyin": "Hǎo, wǒmen yìqǐ qù.",
+    "arti": "Baik, kita pergi bersama.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "今天是你的生日吗？",
+    "pinyin": "Jīntiān shì nǐ de shēngrì ma?",
+    "arti": "Hari ini ulang tahunmu?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "是。",
+    "pinyin": "Shì.",
+    "arti": "Ya.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你几岁了？",
+    "pinyin": "Nǐ jǐ suì le?",
+    "arti": "Kamu berumur berapa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我二十八岁了。",
+    "pinyin": "Wǒ èrshíbā suì le.",
+    "arti": "Saya berumur 28 tahun.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "生日快乐！",
+    "pinyin": "Shēngrì kuàilè!",
+    "arti": "Selamat ulang tahun!",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "谢谢！",
+    "pinyin": "Xièxie!",
+    "arti": "Terima kasih!",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你想要什么礼物？",
+    "pinyin": "Nǐ xiǎng yào shénme lǐwù?",
+    "arti": "Kamu ingin hadiah apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我想要手机。",
+    "pinyin": "Wǒ xiǎng yào shǒujī.",
+    "arti": "Saya ingin HP.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "手机太贵了。",
+    "pinyin": "Shǒujī tài guì le.",
+    "arti": "HP terlalu mahal.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "那给我一本书吧。",
+    "pinyin": "Nà gěi wǒ yì běn shū ba.",
+    "arti": "Kalau begitu berikan saya sebuah buku.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "好。",
+    "pinyin": "Hǎo.",
+    "arti": "Baik.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "今天星期几？",
+    "pinyin": "Jīntiān xīngqī jǐ?",
+    "arti": "Hari ini hari apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "今天星期一。",
+    "pinyin": "Jīntiān xīngqī yī.",
+    "arti": "Hari ini Senin.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "昨天星期几？",
+    "pinyin": "Zuótiān xīngqī jǐ?",
+    "arti": "Kemarin hari apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "昨天星期天。",
+    "pinyin": "Zuótiān xīngqī tiān.",
+    "arti": "Kemarin Minggu.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "明天呢？",
+    "pinyin": "Míngtiān ne?",
+    "arti": "Kalau besok?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "明天星期二。",
+    "pinyin": "Míngtiān xīngqī èr.",
+    "arti": "Besok Selasa.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "上个星期你做什么？",
+    "pinyin": "Shàng ge xīngqī nǐ zuò shénme?",
+    "arti": "Minggu lalu kamu melakukan apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我去上海。",
+    "pinyin": "Wǒ qù Shànghǎi.",
+    "arti": "Saya pergi ke Shanghai.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "这个星期呢？",
+    "pinyin": "Zhège xīngqī ne?",
+    "arti": "Kalau minggu ini?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "这个星期我工作。",
+    "pinyin": "Zhège xīngqī wǒ gōngzuò.",
+    "arti": "Minggu ini saya bekerja.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "下个星期呢？",
+    "pinyin": "Xià ge xīngqī ne?",
+    "arti": "Kalau minggu depan?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "下个星期我想去香港。",
+    "pinyin": "Xià ge xīngqī wǒ xiǎng qù Xiānggǎng.",
+    "arti": "Minggu depan saya ingin pergi ke Hong Kong.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "他是谁？",
+    "pinyin": "Tā shì shéi?",
+    "arti": "Siapa dia?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "他是厨师。",
+    "pinyin": "Tā shì chúshī.",
+    "arti": "Dia adalah chef.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "她是谁？",
+    "pinyin": "Tā shì shéi?",
+    "arti": "Siapa dia?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "她是医生。",
+    "pinyin": "Tā shì yīshēng.",
+    "arti": "Dia adalah dokter.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "她呢？",
+    "pinyin": "Tā ne?",
+    "arti": "Bagaimana dengan dia?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "她是护士。",
+    "pinyin": "Tā shì hùshi.",
+    "arti": "Dia adalah suster.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "他呢？",
+    "pinyin": "Tā ne?",
+    "arti": "Bagaimana dengan dia?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "他是记者。",
+    "pinyin": "Tā shì jìzhě.",
+    "arti": "Dia adalah reporter.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你的爸爸是记者吗？",
+    "pinyin": "Nǐ de bàba shì jìzhě ma?",
+    "arti": "Apakah ayahmu reporter?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "不是，他在公司工作。",
+    "pinyin": "Bú shì, tā zài gōngsī gōngzuò.",
+    "arti": "Bukan, dia bekerja di perusahaan.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你的电脑怎么了？",
+    "pinyin": "Nǐ de diànnǎo zěnme le?",
+    "arti": "Komputermu kenapa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我的电脑坏了。",
+    "pinyin": "Wǒ de diànnǎo huài le.",
+    "arti": "Komputer saya rusak.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你会修电脑吗？",
+    "pinyin": "Nǐ huì xiū diànnǎo ma?",
+    "arti": "Apakah kamu bisa memperbaiki komputer?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "会。",
+    "pinyin": "Huì.",
+    "arti": "Bisa.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "真的？",
+    "pinyin": "Zhēn de?",
+    "arti": "Benarkah?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "是，我会修电脑。",
+    "pinyin": "Shì, wǒ huì xiū diànnǎo.",
+    "arti": "Ya, saya bisa memperbaiki komputer.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "太好了！",
+    "pinyin": "Tài hǎo le!",
+    "arti": "Wah, bagus sekali!",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "但是现在我很忙。",
+    "pinyin": "Dànshì xiànzài wǒ hěn máng.",
+    "arti": "Tetapi sekarang saya sangat sibuk.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "什么时候可以？",
+    "pinyin": "Shénme shíhou kěyǐ?",
+    "arti": "Kapan bisa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "下午五点以后。",
+    "pinyin": "Xiàwǔ wǔ diǎn yǐhòu.",
+    "arti": "Setelah jam lima sore.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你是哪国人？",
+    "pinyin": "Nǐ shì nǎ guó rén?",
+    "arti": "Kamu orang negara mana?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我是印尼人。",
+    "pinyin": "Wǒ shì Yìnní rén.",
+    "arti": "Saya orang Indonesia.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你会说汉语吗？",
+    "pinyin": "Nǐ huì shuō Hànyǔ ma?",
+    "arti": "Kamu bisa berbicara Mandarin?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "会一点儿。",
+    "pinyin": "Huì yìdiǎnr.",
+    "arti": "Bisa sedikit.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你会说英语吗？",
+    "pinyin": "Nǐ huì shuō Yīngyǔ ma?",
+    "arti": "Apakah kamu bisa bahasa Inggris?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "会。",
+    "pinyin": "Huì.",
+    "arti": "Bisa.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你想学德语吗？",
+    "pinyin": "Nǐ xiǎng xué Déyǔ ma?",
+    "arti": "Kamu ingin belajar bahasa Jerman?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "不想。",
+    "pinyin": "Bù xiǎng.",
+    "arti": "Tidak ingin.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "为什么？",
+    "pinyin": "Wèishénme?",
+    "arti": "Mengapa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "因为德语太难。",
+    "pinyin": "Yīnwèi Déyǔ tài nán.",
+    "arti": "Karena bahasa Jerman terlalu sulit.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你的朋友在哪里？",
+    "pinyin": "Nǐ de péngyou zài nǎlǐ?",
+    "arti": "Temanmu di mana?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我的朋友在美国。",
+    "pinyin": "Wǒ de péngyou zài Měiguó.",
+    "arti": "Teman saya di Amerika.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "他什么时候回来？",
+    "pinyin": "Tā shénme shíhou huílái?",
+    "arti": "Kapan dia kembali?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我不知道。",
+    "pinyin": "Wǒ bù zhīdào.",
+    "arti": "Saya tidak tahu.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你想他吗？",
+    "pinyin": "Nǐ xiǎng tā ma?",
+    "arti": "Apakah kamu merindukannya?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "想。",
+    "pinyin": "Xiǎng.",
+    "arti": "Rindu.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你经常给他打电话吗？",
+    "pinyin": "Nǐ jīngcháng gěi tā dǎ diànhuà ma?",
+    "arti": "Apakah kamu sering meneleponnya?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "是，我经常给他打电话。",
+    "pinyin": "Shì, wǒ jīngcháng gěi tā dǎ diànhuà.",
+    "arti": "Ya, saya sering meneleponnya.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你家有动物吗？",
+    "pinyin": "Nǐ jiā yǒu dòngwù ma?",
+    "arti": "Apakah di rumahmu ada hewan?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "有。",
+    "pinyin": "Yǒu.",
+    "arti": "Ada.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "有什么？",
+    "pinyin": "Yǒu shénme?",
+    "arti": "Ada apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "有一只猫和一只狗。",
+    "pinyin": "Yǒu yì zhī māo hé yì zhī gǒu.",
+    "arti": "Ada seekor kucing dan seekor anjing.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你的猫大吗？",
+    "pinyin": "Nǐ de māo dà ma?",
+    "arti": "Apakah kucingmu besar?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "不大，很小。",
+    "pinyin": "Bú dà, hěn xiǎo.",
+    "arti": "Tidak besar, sangat kecil.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "狗呢？",
+    "pinyin": "Gǒu ne?",
+    "arti": "Bagaimana dengan anjingnya?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "狗很大。",
+    "pinyin": "Gǒu hěn dà.",
+    "arti": "Anjingnya sangat besar.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "猫和狗一样大吗？",
+    "pinyin": "Māo hé gǒu yíyàng dà?",
+    "arti": "Apakah kucing dan anjing sama besarnya?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "不一样。",
+    "pinyin": "Bù yíyàng.",
+    "arti": "Tidak sama.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你在哪里吃饭？",
+    "pinyin": "Nǐ zài nǎlǐ chīfàn?",
+    "arti": "Kamu makan di mana?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我在饭店吃饭。",
+    "pinyin": "Wǒ zài fàndiàn chīfàn.",
+    "arti": "Saya makan di restoran/hotel.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你要吃什么？",
+    "pinyin": "Nǐ yào chī shénme?",
+    "arti": "Kamu mau makan apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我要吃面条。",
+    "pinyin": "Wǒ yào chī miàntiáo.",
+    "arti": "Saya mau makan mie.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "要面包吗？",
+    "pinyin": "Yào miànbāo ma?",
+    "arti": "Mau roti?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "不要。",
+    "pinyin": "Bú yào.",
+    "arti": "Tidak mau.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "要喝牛奶吗？",
+    "pinyin": "Yào hē niúnǎi ma?",
+    "arti": "Mau minum susu?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "要。",
+    "pinyin": "Yào.",
+    "arti": "Mau.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "一杯牛奶，可以吗？",
+    "pinyin": "Yì bēi niúnǎi, kěyǐ ma?",
+    "arti": "Segelas susu, boleh?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "可以，谢谢。",
+    "pinyin": "Kěyǐ, xièxie.",
+    "arti": "Boleh, terima kasih.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "现在几点？",
+    "pinyin": "Xiànzài jǐ diǎn?",
+    "arti": "Sekarang jam berapa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "现在八点。",
+    "pinyin": "Xiànzài bā diǎn.",
+    "arti": "Sekarang jam 8.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "现在几点？",
+    "pinyin": "Xiànzài jǐ diǎn?",
+    "arti": "Sekarang jam berapa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "八点半。",
+    "pinyin": "Bā diǎn bàn.",
+    "arti": "08.30.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "现在几点？",
+    "pinyin": "Xiànzài jǐ diǎn?",
+    "arti": "Sekarang jam berapa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "八点十五分。",
+    "pinyin": "Bā diǎn shíwǔ fēn.",
+    "arti": "08.15.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "八点一刻。",
+    "pinyin": "Bā diǎn yí kè.",
+    "arti": "08.15.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "现在几点？",
+    "pinyin": "Xiànzài jǐ diǎn?",
+    "arti": "Sekarang jam berapa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "差十五分九点。",
+    "pinyin": "Chà shíwǔ fēn jiǔ diǎn.",
+    "arti": "Kurang 15 menit dari jam 9 → 08.45.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "什么时候上课？",
+    "pinyin": "Shénme shíhou shàngkè?",
+    "arti": "Kapan mulai pelajaran?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "上午八点半。",
+    "pinyin": "Shàngwǔ bā diǎn bàn.",
+    "arti": "Jam 08.30 pagi.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "早上好！",
+    "pinyin": "Zǎoshàng hǎo!",
+    "arti": "Selamat pagi!",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "早上好！你今天去哪儿？",
+    "pinyin": "Zǎoshàng hǎo! Nǐ jīntiān qù nǎr?",
+    "arti": "Selamat pagi! Hari ini kamu mau ke mana?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我去学校。",
+    "pinyin": "Wǒ qù xuéxiào.",
+    "arti": "Saya pergi ke sekolah.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你吃早饭了吗？",
+    "pinyin": "Nǐ chī zǎofàn le ma?",
+    "arti": "Kamu sudah sarapan?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "吃了。",
+    "pinyin": "Chī le.",
+    "arti": "Sudah.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "吃什么？",
+    "pinyin": "Chī shénme?",
+    "arti": "Makan apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我吃面包，喝牛奶。",
+    "pinyin": "Wǒ chī miànbāo, hē niúnǎi.",
+    "arti": "Saya makan roti dan minum susu.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你今天上什么课？",
+    "pinyin": "Nǐ jīntiān shàng shénme kè?",
+    "arti": "Hari ini kamu belajar apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我学习汉语。",
+    "pinyin": "Wǒ xuéxí Hànyǔ.",
+    "arti": "Saya belajar Mandarin.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "汉语难吗？",
+    "pinyin": "Hànyǔ nán ma?",
+    "arti": "Mandarin sulit?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "很难，但是我喜欢汉语。",
+    "pinyin": "Hěn nán, dànshì wǒ xǐhuan Hànyǔ.",
+    "arti": "Sangat sulit, tetapi saya suka Mandarin.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你每天学习吗？",
+    "pinyin": "Nǐ měitiān xuéxí ma?",
+    "arti": "Apakah kamu belajar setiap hari?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "是，我每天学习。",
+    "pinyin": "Shì, wǒ měitiān xuéxí.",
+    "arti": "Ya, saya belajar setiap hari.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "中午你吃饭吗？",
+    "pinyin": "Zhōngwǔ nǐ chīfàn ma?",
+    "arti": "Apakah kamu makan siang?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "吃。",
+    "pinyin": "Chī.",
+    "arti": "Makan.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "吃什么？",
+    "pinyin": "Chī shénme?",
+    "arti": "Makan apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "吃面条。",
+    "pinyin": "Chī miàntiáo.",
+    "arti": "Makan mie.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "喝什么？",
+    "pinyin": "Hē shénme?",
+    "arti": "Minum apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "可口可乐。",
+    "pinyin": "Kěkǒukělè.",
+    "arti": "Coca-Cola.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "下午你做什么？",
+    "pinyin": "Xiàwǔ nǐ zuò shénme?",
+    "arti": "Sore kamu melakukan apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我要去图书馆。",
+    "pinyin": "Wǒ yào qù túshūguǎn.",
+    "arti": "Saya mau pergi ke perpustakaan.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "去图书馆做什么？",
+    "pinyin": "Qù túshūguǎn zuò shénme?",
+    "arti": "Pergi ke perpustakaan untuk apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "看书，做作业。",
+    "pinyin": "Kàn shū, zuò zuòyè.",
+    "arti": "Membaca buku dan mengerjakan PR.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我们一起去吧。",
+    "pinyin": "Wǒmen yìqǐ qù ba.",
+    "arti": "Mari kita pergi bersama.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "好。",
+    "pinyin": "Hǎo.",
+    "arti": "Baik.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "晚上你做什么？",
+    "pinyin": "Wǎnshàng nǐ zuò shénme?",
+    "arti": "Malam kamu melakukan apa?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "我在家。",
+    "pinyin": "Wǒ zài jiā.",
+    "arti": "Saya di rumah.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你吃饭了吗？",
+    "pinyin": "Nǐ chīfàn le ma?",
+    "arti": "Kamu sudah makan?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "吃了。",
+    "pinyin": "Chī le.",
+    "arti": "Sudah.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "你要看电影吗？",
+    "pinyin": "Nǐ yào kàn diànyǐng ma?",
+    "arti": "Mau menonton film?",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "不，我很累。",
+    "pinyin": "Bù, wǒ hěn lèi.",
+    "arti": "Tidak, saya sangat lelah.",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "那明天见！",
+    "pinyin": "Nà míngtiān jiàn!",
+    "arti": "Kalau begitu sampai jumpa besok!",
+    "hsk": "1"
+  },
+  {
+    "hanzi": "好，明天见！再见！",
+    "pinyin": "Hǎo, míngtiān jiàn! Zàijiàn!",
+    "arti": "Baik, sampai jumpa besok! Sampai jumpa!",
+    "hsk": "1"
+  }
+]

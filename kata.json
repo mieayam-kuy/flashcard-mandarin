@@ -1,0 +1,1387 @@
+[
+    {
+        "hanzi": "我",
+        "pinyin": "wŏ",
+        "arti": "Saya"
+    },
+    {
+        "hanzi": "你",
+        "pinyin": "nĭ",
+        "arti": "Kamu"
+    },
+    {
+        "hanzi": "他",
+        "pinyin": "tā",
+        "arti": "Dia"
+    },
+    {
+        "hanzi": "是",
+        "pinyin": "shì",
+        "arti": "Adalah"
+    },
+    {
+        "hanzi": "老师",
+        "pinyin": "lăoshī",
+        "arti": "Guru"
+    },
+    {
+        "hanzi": "学生",
+        "pinyin": "xuéshēng",
+        "arti": "Murid"
+    },
+    {
+        "hanzi": "这",
+        "pinyin": "zhè",
+        "arti": "Ini"
+    },
+    {
+        "hanzi": "那",
+        "pinyin": "nà",
+        "arti": "Itu"
+    },
+    {
+        "hanzi": "学校",
+        "pinyin": "xuéxiào",
+        "arti": "Sekolah"
+    },
+    {
+        "hanzi": "书",
+        "pinyin": "shū",
+        "arti": "Buku"
+    },
+    {
+        "hanzi": "好",
+        "pinyin": "hăo",
+        "arti": "Baik, bagus"
+    },
+    {
+        "hanzi": "人",
+        "pinyin": "rén",
+        "arti": "Orang"
+    },
+    {
+        "hanzi": "吗",
+        "pinyin": "ma",
+        "arti": "Apakah"
+    },
+    {
+        "hanzi": "不",
+        "pinyin": "bù",
+        "arti": "Tidak"
+    },
+    {
+        "hanzi": "医生",
+        "pinyin": "yīshēng",
+        "arti": "Dokter"
+    },
+    {
+        "hanzi": "的",
+        "pinyin": "de",
+        "arti": "Partikel"
+    },
+    {
+        "hanzi": "谢谢",
+        "pinyin": "xièxie",
+        "arti": "Terima kasih"
+    },
+    {
+        "hanzi": "要",
+        "pinyin": "yào",
+        "arti": "Ingin"
+    },
+    {
+        "hanzi": "面包",
+        "pinyin": "miàn bāo",
+        "arti": "Roti"
+    },
+    {
+        "hanzi": "吃",
+        "pinyin": "chī",
+        "arti": "Makan"
+    },
+    {
+        "hanzi": "上",
+        "pinyin": "shàng",
+        "arti": "Atas"
+    },
+    {
+        "hanzi": "大",
+        "pinyin": "dà",
+        "arti": "Besar"
+    },
+    {
+        "hanzi": "二",
+        "pinyin": "èr",
+        "arti": "Dua"
+    },
+    {
+        "hanzi": "三",
+        "pinyin": "sān",
+        "arti": "Tiga"
+    },
+    {
+        "hanzi": "十",
+        "pinyin": "shí",
+        "arti": "Sepuluh"
+    },
+    {
+        "hanzi": "八",
+        "pinyin": "bā",
+        "arti": "Delapan"
+    },
+    {
+        "hanzi": "厨师",
+        "pinyin": "chúshī",
+        "arti": "Chef\/Koki"
+    },
+    {
+        "hanzi": "护士",
+        "pinyin": "hùshì",
+        "arti": "Suster"
+    },
+    {
+        "hanzi": "桌子",
+        "pinyin": "zhuōzi",
+        "arti": "Meja"
+    },
+    {
+        "hanzi": "图书馆",
+        "pinyin": "túshūguăn",
+        "arti": "Perpustakaan"
+    },
+    {
+        "hanzi": "忙",
+        "pinyin": "máng",
+        "arti": "Sibuk"
+    },
+    {
+        "hanzi": "很",
+        "pinyin": "hĕn",
+        "arti": "Sangat"
+    },
+    {
+        "hanzi": "对",
+        "pinyin": "duì",
+        "arti": "Benar"
+    },
+    {
+        "hanzi": "天",
+        "pinyin": "tiān",
+        "arti": "Langit"
+    },
+    {
+        "hanzi": "什么",
+        "pinyin": "shénme",
+        "arti": "Apa"
+    },
+    {
+        "hanzi": "汉语",
+        "pinyin": "hànyŭ",
+        "arti": "Mandarin"
+    },
+    {
+        "hanzi": "叫",
+        "pinyin": "jiào",
+        "arti": "Panggilan"
+    },
+    {
+        "hanzi": "名字",
+        "pinyin": "míngzi",
+        "arti": "Nama"
+    },
+    {
+        "hanzi": "子",
+        "pinyin": "zĭ",
+        "arti": "Anak"
+    },
+    {
+        "hanzi": "笔",
+        "pinyin": "bĭ",
+        "arti": "Pensil"
+    },
+    {
+        "hanzi": "尺",
+        "pinyin": "chĭ",
+        "arti": "Penggaris"
+    },
+    {
+        "hanzi": "下",
+        "pinyin": "xià",
+        "arti": "Bawah"
+    },
+    {
+        "hanzi": "六",
+        "pinyin": "liù",
+        "arti": "Enam"
+    },
+    {
+        "hanzi": "谁",
+        "pinyin": "Shuí",
+        "arti": "Siapa"
+    },
+    {
+        "hanzi": "最",
+        "pinyin": "Zuì",
+        "arti": "paling \/ sangat"
+    },
+    {
+        "hanzi": "书包",
+        "pinyin": "Shūbāo",
+        "arti": "Tas sekolah"
+    },
+    {
+        "hanzi": "铅笔",
+        "pinyin": "Qiānbǐ",
+        "arti": "pensil"
+    },
+    {
+        "hanzi": "橡皮",
+        "pinyin": "Xiàngpí",
+        "arti": "Penghapus"
+    },
+    {
+        "hanzi": "爸爸",
+        "pinyin": "Bàba",
+        "arti": "Ayah"
+    },
+    {
+        "hanzi": "高",
+        "pinyin": "Gāo",
+        "arti": "Tinggi"
+    },
+    {
+        "hanzi": "姐姐",
+        "pinyin": "Jiĕjie",
+        "arti": "Kakak perempuan"
+    },
+    {
+        "hanzi": "家",
+        "pinyin": "Jiā",
+        "arti": "Rumah"
+    },
+    {
+        "hanzi": "人",
+        "pinyin": "Rén",
+        "arti": "Orang"
+    },
+    {
+        "hanzi": "弟弟",
+        "pinyin": "Dìdi",
+        "arti": "Adik laki-laki"
+    },
+    {
+        "hanzi": "妈妈",
+        "pinyin": "Māma",
+        "arti": "Ibu"
+    },
+    {
+        "hanzi": "妹妹",
+        "pinyin": "Mèimei",
+        "arti": "Adik perempuan"
+    },
+    {
+        "hanzi": "爷爷",
+        "pinyin": "Yéye",
+        "arti": "Kakek"
+    },
+    {
+        "hanzi": "哥哥",
+        "pinyin": "Gēge",
+        "arti": "Kakak laki-laki"
+    },
+    {
+        "hanzi": "和",
+        "pinyin": "Hé",
+        "arti": "dan"
+    },
+    {
+        "hanzi": "你呢",
+        "pinyin": "Nĭne",
+        "arti": "Kalau kamu"
+    },
+    {
+        "hanzi": "个",
+        "pinyin": "Ge",
+        "arti": "Buah (kata penggolong)"
+    },
+    {
+        "hanzi": "星期",
+        "pinyin": "Xīngqī",
+        "arti": "Minggu"
+    },
+    {
+        "hanzi": "一班",
+        "pinyin": "Yībān",
+        "arti": "Sekelas"
+    },
+    {
+        "hanzi": "学生",
+        "pinyin": "Xuésheng",
+        "arti": "Murid"
+    },
+    {
+        "hanzi": "药",
+        "pinyin": "Yào",
+        "arti": "Obat"
+    },
+    {
+        "hanzi": "每天",
+        "pinyin": "Mĕitiān",
+        "arti": "Setiap hari"
+    },
+    {
+        "hanzi": "次",
+        "pinyin": "CÌ",
+        "arti": "Kali"
+    },
+    {
+        "hanzi": "吃",
+        "pinyin": "Chī",
+        "arti": "Makan"
+    },
+    {
+        "hanzi": "朋友",
+        "pinyin": "Péngyou",
+        "arti": "Teman"
+    },
+    {
+        "hanzi": "够",
+        "pinyin": "Gòu",
+        "arti": "Anjing"
+    },
+    {
+        "hanzi": "猫",
+        "pinyin": "Māo",
+        "arti": "Kucing"
+    },
+    {
+        "hanzi": "在",
+        "pinyin": "zài",
+        "arti": "Di"
+    },
+    {
+        "hanzi": "哪\/ 哪儿",
+        "pinyin": "nă \/năr",
+        "arti": "Di mana"
+    },
+    {
+        "hanzi": "小",
+        "pinyin": "xiăo",
+        "arti": "Kecil"
+    },
+    {
+        "hanzi": "狗",
+        "pinyin": "gōu",
+        "arti": "Anjing"
+    },
+    {
+        "hanzi": "从",
+        "pinyin": "cóng",
+        "arti": "Dari"
+    },
+    {
+        "hanzi": "来",
+        "pinyin": "lái",
+        "arti": "Datang"
+    },
+    {
+        "hanzi": "雅加达",
+        "pinyin": "yăjiādá",
+        "arti": "Jakarta"
+    },
+    {
+        "hanzi": "药店",
+        "pinyin": "yàodiàn",
+        "arti": "Toko obat"
+    },
+    {
+        "hanzi": "上面",
+        "pinyin": "shàngmiàn",
+        "arti": "Sisi atas"
+    },
+    {
+        "hanzi": "下面",
+        "pinyin": "xiàmiàn",
+        "arti": "Sisi bawah"
+    },
+    {
+        "hanzi": "右边",
+        "pinyin": "yòubian",
+        "arti": "Sisi kanan"
+    },
+    {
+        "hanzi": "左边",
+        "pinyin": "zuŏbian",
+        "arti": "Sisi kiri"
+    },
+    {
+        "hanzi": "图书馆",
+        "pinyin": "Túshū guǎn",
+        "arti": "Perpustakaan"
+    },
+    {
+        "hanzi": "桌子",
+        "pinyin": "zhuōzi",
+        "arti": "Meja"
+    },
+    {
+        "hanzi": "泗水",
+        "pinyin": "sìshuĭ",
+        "arti": "Surabaya"
+    },
+    {
+        "hanzi": "笔",
+        "pinyin": "bĭ",
+        "arti": "Pensil"
+    },
+    {
+        "hanzi": "椅子",
+        "pinyin": "yĭzi",
+        "arti": "Kursi"
+    },
+    {
+        "hanzi": "早上",
+        "pinyin": "Zăoshàng",
+        "arti": "Pagi hari"
+    },
+    {
+        "hanzi": "上午",
+        "pinyin": "Shàngwŭ",
+        "arti": "Siang hari"
+    },
+    {
+        "hanzi": "下午",
+        "pinyin": "Xiàwŭ",
+        "arti": "Sore hari"
+    },
+    {
+        "hanzi": "晚上",
+        "pinyin": "Wănshàng",
+        "arti": "Malam hari"
+    },
+    {
+        "hanzi": "今天",
+        "pinyin": "Jīntiān",
+        "arti": "Hari ini"
+    },
+    {
+        "hanzi": "昨天",
+        "pinyin": "Zuótiān",
+        "arti": "Kemarin"
+    },
+    {
+        "hanzi": "每天",
+        "pinyin": "Mĕitiān",
+        "arti": "Setiap hari"
+    },
+    {
+        "hanzi": "再见",
+        "pinyin": "Zàijiàn",
+        "arti": "Sampai jumpa"
+    },
+    {
+        "hanzi": "明天",
+        "pinyin": "Míngtiān",
+        "arti": "Besok"
+    },
+    {
+        "hanzi": "看",
+        "pinyin": "Kàn",
+        "arti": "Melihat"
+    },
+    {
+        "hanzi": "电影",
+        "pinyin": "Diànyĭng",
+        "arti": "Film"
+    },
+    {
+        "hanzi": "去",
+        "pinyin": "Qù",
+        "arti": "Pergi"
+    },
+    {
+        "hanzi": "能",
+        "pinyin": "Néng",
+        "arti": "Bisa"
+    },
+    {
+        "hanzi": "干",
+        "pinyin": "Gàn",
+        "arti": "Melakukan"
+    },
+    {
+        "hanzi": "书店",
+        "pinyin": "Shūdiàn",
+        "arti": "Toko buku"
+    },
+    {
+        "hanzi": "什么时候",
+        "pinyin": "Shénme shíhou",
+        "arti": "Kapan"
+    },
+    {
+        "hanzi": "早饭",
+        "pinyin": "Zăofàn",
+        "arti": "Sarapan"
+    },
+    {
+        "hanzi": "来",
+        "pinyin": "Lái",
+        "arti": "Datang"
+    },
+    {
+        "hanzi": "回来",
+        "pinyin": "Huílái",
+        "arti": "Kembali"
+    },
+    {
+        "hanzi": "点",
+        "pinyin": "Diăn",
+        "arti": "Jam (o’clock)"
+    },
+    {
+        "hanzi": "零",
+        "pinyin": "Líng",
+        "arti": "Nol"
+    },
+    {
+        "hanzi": "分",
+        "pinyin": "Fēn",
+        "arti": "Menit"
+    },
+    {
+        "hanzi": "半",
+        "pinyin": "Bàn",
+        "arti": "30 menit"
+    },
+    {
+        "hanzi": "差",
+        "pinyin": "Chā",
+        "arti": "Kurang"
+    },
+    {
+        "hanzi": "一刻",
+        "pinyin": "Yīge",
+        "arti": "15 menit"
+    },
+    {
+        "hanzi": "做",
+        "pinyin": "Zuò",
+        "arti": "Mengerjakan"
+    },
+    {
+        "hanzi": "作业",
+        "pinyin": "Zuòyè",
+        "arti": "Pekerjaan rumah (PR)"
+    },
+    {
+        "hanzi": "上课",
+        "pinyin": "Shàngkè",
+        "arti": "Memulai pelajaran"
+    },
+    {
+        "hanzi": "上个星期",
+        "pinyin": "Shàngge Xīngqī",
+        "arti": "Minggu lalu"
+    },
+    {
+        "hanzi": "这个星期",
+        "pinyin": "Zhège Xīngqī",
+        "arti": "Minggu ini"
+    },
+    {
+        "hanzi": "下个星期",
+        "pinyin": "Xiàgè Xīngqī",
+        "arti": "Minggu depan"
+    },
+    {
+        "hanzi": "星期一",
+        "pinyin": "Xīngqīyī",
+        "arti": "Hari Senin"
+    },
+    {
+        "hanzi": "星期二",
+        "pinyin": "Xīngqīèr",
+        "arti": "Hari Selasa"
+    },
+    {
+        "hanzi": "星期三",
+        "pinyin": "Xīngqīsān",
+        "arti": "Hari Rabu"
+    },
+    {
+        "hanzi": "星期四",
+        "pinyin": "Xīngqīsì",
+        "arti": "Hari Kamis"
+    },
+    {
+        "hanzi": "星期五",
+        "pinyin": "Xīngqīwŭ",
+        "arti": "Hari Jumat"
+    },
+    {
+        "hanzi": "星期六",
+        "pinyin": "Xīngqīliù",
+        "arti": "Hari Sabtu"
+    },
+    {
+        "hanzi": "星期天",
+        "pinyin": "Xīngqītiān",
+        "arti": "Hari Minggu"
+    },
+    {
+        "hanzi": "去",
+        "pinyin": "Qù",
+        "arti": "Pergi"
+    },
+    {
+        "hanzi": "上海",
+        "pinyin": "Shànghăi",
+        "arti": "Shanghai"
+    },
+    {
+        "hanzi": "香港",
+        "pinyin": "Xiānggăng",
+        "arti": "Hongkong"
+    },
+    {
+        "hanzi": "为什么",
+        "pinyin": "Wèishénme",
+        "arti": "Mengapa"
+    },
+    {
+        "hanzi": "身体",
+        "pinyin": "Shēntǐ",
+        "arti": "Badan"
+    },
+    {
+        "hanzi": "不舒服",
+        "pinyin": "Bù shūfu",
+        "arti": "Kurang enak"
+    },
+    {
+        "hanzi": "迟到",
+        "pinyin": "Chídào",
+        "arti": "Terlambat"
+    },
+    {
+        "hanzi": "路上",
+        "pinyin": "Lùshang",
+        "arti": "Jalanan"
+    },
+    {
+        "hanzi": "堵车",
+        "pinyin": "Dǔchē",
+        "arti": "Macet"
+    },
+    {
+        "hanzi": "吃",
+        "pinyin": "Chī",
+        "arti": "Makan"
+    },
+    {
+        "hanzi": "面条",
+        "pinyin": "Miàntiáo",
+        "arti": "Mie"
+    },
+    {
+        "hanzi": "喝",
+        "pinyin": "Hē",
+        "arti": "Minum"
+    },
+    {
+        "hanzi": "可口可乐",
+        "pinyin": "Kěkǒukělè",
+        "arti": "Cocacola"
+    },
+    {
+        "hanzi": "芒果",
+        "pinyin": "Mángguǒ",
+        "arti": "Mangga"
+    },
+    {
+        "hanzi": "喜欢",
+        "pinyin": "Xĭhuan",
+        "arti": "Suka"
+    },
+    {
+        "hanzi": "爱好",
+        "pinyin": "àihào",
+        "arti": "Hobi"
+    },
+    {
+        "hanzi": "游泳",
+        "pinyin": "Yóuyǒng",
+        "arti": "Berenang"
+    },
+    {
+        "hanzi": "打篮球",
+        "pinyin": "Dǎ lánqiú",
+        "arti": "Bermain basket"
+    },
+    {
+        "hanzi": "你好",
+        "pinyin": "nĭhăo",
+        "arti": "Hallo"
+    },
+    {
+        "hanzi": "你好吗",
+        "pinyin": "nĭhăoma",
+        "arti": "Apa kabarmu?"
+    },
+    {
+        "hanzi": "住",
+        "pinyin": "zhù",
+        "arti": "Tinggal"
+    },
+    {
+        "hanzi": "街",
+        "pinyin": "jiĕ",
+        "arti": "Jalan"
+    },
+    {
+        "hanzi": "号",
+        "pinyin": "hào",
+        "arti": "Nomor"
+    },
+    {
+        "hanzi": "等等",
+        "pinyin": "dĕngdeng",
+        "arti": "Lain-lain"
+    },
+    {
+        "hanzi": "呢",
+        "pinyin": "ne",
+        "arti": "Sih"
+    },
+    {
+        "hanzi": "也",
+        "pinyin": "yĕ",
+        "arti": "Juga"
+    },
+    {
+        "hanzi": "年",
+        "pinyin": "nián",
+        "arti": "Tahun"
+    },
+    {
+        "hanzi": "月一月二月三月四月五月Dst…",
+        "pinyin": "yuè yī yuè èr yuèsān yuèsì yuè wŭ yuè …",
+        "arti": "BulanJanuariFebruariMaretAprilMei"
+    },
+    {
+        "hanzi": "号\/日六号八号十号Dst…",
+        "pinyin": "hào\/rì liù hào bā hào shí hào",
+        "arti": "Tanggal"
+    },
+    {
+        "hanzi": "现在",
+        "pinyin": "xiànzài",
+        "arti": "Sekarang"
+    },
+    {
+        "hanzi": "生日",
+        "pinyin": "shēngrì",
+        "arti": "Ulang tahun"
+    },
+    {
+        "hanzi": "商场",
+        "pinyin": "shāngchăng",
+        "arti": "Mall"
+    },
+    {
+        "hanzi": "买",
+        "pinyin": "măi",
+        "arti": "Membeli"
+    },
+    {
+        "hanzi": "礼物",
+        "pinyin": "lĭwù",
+        "arti": "Kado"
+    },
+    {
+        "hanzi": "手机",
+        "pinyin": "shŏujī",
+        "arti": "Hp"
+    },
+    {
+        "hanzi": "给",
+        "pinyin": "gĕi",
+        "arti": "Memberi"
+    },
+    {
+        "hanzi": "衣服",
+        "pinyin": "yīfu",
+        "arti": "Baju"
+    },
+    {
+        "hanzi": "书包",
+        "pinyin": "shūbāo",
+        "arti": "Tas"
+    },
+    {
+        "hanzi": "高兴",
+        "pinyin": "gāoxìng",
+        "arti": "Bahagia,senang"
+    },
+    {
+        "hanzi": "本",
+        "pinyin": "Bĕn",
+        "arti": "Kata penggolong untuk buku"
+    },
+    {
+        "hanzi": "吃饭",
+        "pinyin": "Chīfàn",
+        "arti": "Makan"
+    },
+    {
+        "hanzi": "杯",
+        "pinyin": "Bēi",
+        "arti": "Kata penggolong untuk gelas"
+    },
+    {
+        "hanzi": "了",
+        "pinyin": "Le",
+        "arti": "Kata bantu"
+    },
+    {
+        "hanzi": "岁",
+        "pinyin": "Suì",
+        "arti": "Usia\/umur"
+    },
+    {
+        "hanzi": "牛奶",
+        "pinyin": "Niúnăi",
+        "arti": "Susu"
+    },
+    {
+        "hanzi": "封",
+        "pinyin": "Fēng",
+        "arti": "Kata penggolong untuk surat"
+    },
+    {
+        "hanzi": "喝",
+        "pinyin": "Hé",
+        "arti": "Minum"
+    },
+    {
+        "hanzi": "教",
+        "pinyin": "Jiào",
+        "arti": "Mengajar"
+    },
+    {
+        "hanzi": "先",
+        "pinyin": "Xiān",
+        "arti": "Pertama, duluan"
+    },
+    {
+        "hanzi": "下班",
+        "pinyin": "Xiàbān",
+        "arti": "Pulang kerja"
+    },
+    {
+        "hanzi": "里面",
+        "pinyin": "Lĭmiàn",
+        "arti": "Di dalam"
+    },
+    {
+        "hanzi": "外面",
+        "pinyin": "Wàimiàn",
+        "arti": "Di luar"
+    },
+    {
+        "hanzi": "后面",
+        "pinyin": "Hòumiàn",
+        "arti": "Di belakang"
+    },
+    {
+        "hanzi": "前面",
+        "pinyin": "Qiánmiàn",
+        "arti": "Di depan"
+    },
+    {
+        "hanzi": "在",
+        "pinyin": "Zài",
+        "arti": "di"
+    },
+    {
+        "hanzi": "出生",
+        "pinyin": "Chūshēng",
+        "arti": "Lahir"
+    },
+    {
+        "hanzi": "农村",
+        "pinyin": "Nóngcūn",
+        "arti": "Desa"
+    },
+    {
+        "hanzi": "父母",
+        "pinyin": "Fŭmŭ",
+        "arti": "Orang tua"
+    },
+    {
+        "hanzi": "游泳",
+        "pinyin": "Yŏuyŏng",
+        "arti": "Berenang"
+    },
+    {
+        "hanzi": "咱们",
+        "pinyin": "Zánmen",
+        "arti": "Kita"
+    },
+    {
+        "hanzi": "走",
+        "pinyin": "Zŏu",
+        "arti": "Pergi, berjalan"
+    },
+    {
+        "hanzi": "怎么",
+        "pinyin": "zĕnme",
+        "arti": "Bagaimana"
+    },
+    {
+        "hanzi": "怎么样",
+        "pinyin": "zĕnmeyàng",
+        "arti": "Bagaimana"
+    },
+    {
+        "hanzi": "读",
+        "pinyin": "dù",
+        "arti": "Membaca"
+    },
+    {
+        "hanzi": "迟到",
+        "pinyin": "chīdào",
+        "arti": "Terlambat"
+    },
+    {
+        "hanzi": "身体",
+        "pinyin": "shēntĭ",
+        "arti": "Kesehatan"
+    },
+    {
+        "hanzi": "觉得",
+        "pinyin": "juéde",
+        "arti": "Perasaan, pendapat"
+    },
+    {
+        "hanzi": "一起",
+        "pinyin": "yīqĭ",
+        "arti": "Bersama"
+    },
+    {
+        "hanzi": "唱歌",
+        "pinyin": "chānggē",
+        "arti": "Bernyanyi"
+    },
+    {
+        "hanzi": "很",
+        "pinyin": "hĕn",
+        "arti": "Sangat"
+    },
+    {
+        "hanzi": "太",
+        "pinyin": "tài",
+        "arti": "Terlalu"
+    },
+    {
+        "hanzi": "饿",
+        "pinyin": "è",
+        "arti": "Lapar"
+    },
+    {
+        "hanzi": "真",
+        "pinyin": "Zhēn",
+        "arti": "Sungguh"
+    },
+    {
+        "hanzi": "厚",
+        "pinyin": "Hòu",
+        "arti": "Tebal"
+    },
+    {
+        "hanzi": "件",
+        "pinyin": "Jiàn",
+        "arti": "Kata penggolong untuk pakaian"
+    },
+    {
+        "hanzi": "小",
+        "pinyin": "Xiăo",
+        "arti": "Kecil"
+    },
+    {
+        "hanzi": "不知道",
+        "pinyin": "Bùzhīdao",
+        "arti": "Tidak tahu"
+    },
+    {
+        "hanzi": "非常",
+        "pinyin": "Fēicháng",
+        "arti": "Sekali"
+    },
+    {
+        "hanzi": "问题",
+        "pinyin": "Wèntí",
+        "arti": "Masalah\/pertanyaan"
+    },
+    {
+        "hanzi": "难",
+        "pinyin": "Nán",
+        "arti": "Sulit"
+    },
+    {
+        "hanzi": "都",
+        "pinyin": "Dōu",
+        "arti": "Semua"
+    },
+    {
+        "hanzi": "上海",
+        "pinyin": "Shànghăi",
+        "arti": "Shanghai"
+    },
+    {
+        "hanzi": "父母",
+        "pinyin": "Fùmŭ",
+        "arti": "Orang tua"
+    },
+    {
+        "hanzi": "美国",
+        "pinyin": "Mĕiguó",
+        "arti": "Amerika"
+    },
+    {
+        "hanzi": "会",
+        "pinyin": "Huì",
+        "arti": "bisa"
+    },
+    {
+        "hanzi": "修",
+        "pinyin": "Xiū",
+        "arti": "Memperbaiki"
+    },
+    {
+        "hanzi": "电脑",
+        "pinyin": "diànnăo",
+        "arti": "Computer"
+    },
+    {
+        "hanzi": "说",
+        "pinyin": "shuō",
+        "arti": "Bicara"
+    },
+    {
+        "hanzi": "汉语",
+        "pinyin": "Hànyŭ",
+        "arti": "Bahasa Mandarin"
+    },
+    {
+        "hanzi": "工作",
+        "pinyin": "Gōngzuò",
+        "arti": "Bekerja"
+    },
+    {
+        "hanzi": "能",
+        "pinyin": "néng",
+        "arti": "Bisa"
+    },
+    {
+        "hanzi": "小时",
+        "pinyin": "Xiăoshí",
+        "arti": "Jam"
+    },
+    {
+        "hanzi": "问",
+        "pinyin": "wèn",
+        "arti": "Bertanya"
+    },
+    {
+        "hanzi": "电话",
+        "pinyin": "Diànhuà",
+        "arti": "Telepon"
+    },
+    {
+        "hanzi": "号码",
+        "pinyin": "Hàomă",
+        "arti": "Nomor"
+    },
+    {
+        "hanzi": "工作",
+        "pinyin": "gōngzuò",
+        "arti": "Kerja, Bekerja, Pekerjaan"
+    },
+    {
+        "hanzi": "公司",
+        "pinyin": "gōngsī",
+        "arti": "Perusahaan"
+    },
+    {
+        "hanzi": "记者",
+        "pinyin": "jìzhĕ",
+        "arti": "Reporter"
+    },
+    {
+        "hanzi": "饭店",
+        "pinyin": "fàndiàn",
+        "arti": "Hotel"
+    },
+    {
+        "hanzi": "上班",
+        "pinyin": "shàngbāng",
+        "arti": "Mulai kerja"
+    },
+    {
+        "hanzi": "下班",
+        "pinyin": "xiàbān",
+        "arti": "Pulang kerja"
+    },
+    {
+        "hanzi": "以后",
+        "pinyin": "yĭhòu",
+        "arti": "Setelah"
+    },
+    {
+        "hanzi": "想",
+        "pinyin": "xiăng",
+        "arti": "Rindu"
+    },
+    {
+        "hanzi": "玩儿",
+        "pinyin": "wán er",
+        "arti": "Bermain"
+    },
+    {
+        "hanzi": "颜色",
+        "pinyin": "yánsè",
+        "arti": "Warna"
+    },
+    {
+        "hanzi": "蓝色",
+        "pinyin": "lánsè",
+        "arti": "Biru"
+    },
+    {
+        "hanzi": "绿色",
+        "pinyin": "lǜsè",
+        "arti": "Hijau"
+    },
+    {
+        "hanzi": "白色",
+        "pinyin": "báisè",
+        "arti": "Putih"
+    },
+    {
+        "hanzi": "浅",
+        "pinyin": "qiăn",
+        "arti": "Terang"
+    },
+    {
+        "hanzi": "深",
+        "pinyin": "shēn",
+        "arti": "Gelap"
+    },
+    {
+        "hanzi": "虽然",
+        "pinyin": "suīrán",
+        "arti": "Meskipun"
+    },
+    {
+        "hanzi": "离开",
+        "pinyin": "lĭkāi",
+        "arti": "Meninggalkan"
+    },
+    {
+        "hanzi": "打电话",
+        "pinyin": "dă diànhuà",
+        "arti": "Menelpon"
+    },
+    {
+        "hanzi": "国",
+        "pinyin": "Guó",
+        "arti": "Negara"
+    },
+    {
+        "hanzi": "印尼",
+        "pinyin": "yìnní",
+        "arti": "Indonesia"
+    },
+    {
+        "hanzi": "英国",
+        "pinyin": "Yīngguó",
+        "arti": "Inggris"
+    },
+    {
+        "hanzi": "说",
+        "pinyin": "shuō",
+        "arti": "Bicara"
+    },
+    {
+        "hanzi": "汉语",
+        "pinyin": "hànyú",
+        "arti": "Bahasa Mandarin"
+    },
+    {
+        "hanzi": "买",
+        "pinyin": "Măi",
+        "arti": "Membeli"
+    },
+    {
+        "hanzi": "学",
+        "pinyin": "xué",
+        "arti": "belajar"
+    },
+    {
+        "hanzi": "数学",
+        "pinyin": "shùxué",
+        "arti": "Pelajaran matematika"
+    },
+    {
+        "hanzi": "开车",
+        "pinyin": "kāichē",
+        "arti": "Menyetir mobil"
+    },
+    {
+        "hanzi": "德语",
+        "pinyin": "Déyŭ",
+        "arti": "Bahasa Jerman"
+    },
+    {
+        "hanzi": "地理",
+        "pinyin": "Dìlĭ",
+        "arti": "Pelajaran geografi"
+    },
+    {
+        "hanzi": "电影",
+        "pinyin": "Diànyĭng",
+        "arti": "Film"
+    },
+    {
+        "hanzi": "越。。。越。。。",
+        "pinyin": "Yuè….yuè…..",
+        "arti": "Semakin….. semakin…."
+    },
+    {
+        "hanzi": "跑",
+        "pinyin": "Păo",
+        "arti": "Berlari"
+    },
+    {
+        "hanzi": "快",
+        "pinyin": "Kuài",
+        "arti": "Cepat"
+    },
+    {
+        "hanzi": "下",
+        "pinyin": "Xià",
+        "arti": "Turun"
+    },
+    {
+        "hanzi": "想",
+        "pinyin": "Xiăng",
+        "arti": "Berpikir"
+    },
+    {
+        "hanzi": "生气",
+        "pinyin": "Shēngqì",
+        "arti": "Marah"
+    },
+    {
+        "hanzi": "一样",
+        "pinyin": "Yīyàng",
+        "arti": "Sama"
+    },
+    {
+        "hanzi": "比",
+        "pinyin": "Bĭ",
+        "arti": "Dibandingkan"
+    },
+    {
+        "hanzi": "漂亮",
+        "pinyin": "Piàoliang",
+        "arti": "Cantik"
+    },
+    {
+        "hanzi": "矮",
+        "pinyin": "ăi",
+        "arti": "Pendek"
+    },
+    {
+        "hanzi": "方便",
+        "pinyin": "Fāngbiàn",
+        "arti": "Praktis"
+    },
+    {
+        "hanzi": "运动",
+        "pinyin": "Yùndòng",
+        "arti": "Olahraga"
+    },
+    {
+        "hanzi": "游泳",
+        "pinyin": "Yóuyŏng",
+        "arti": "Berenang"
+    },
+    {
+        "hanzi": "篮球",
+        "pinyin": "Lánqiú",
+        "arti": "Basket"
+    },
+    {
+        "hanzi": "经常",
+        "pinyin": "Jīngcháng",
+        "arti": "Sering"
+    },
+    {
+        "hanzi": "打 ， 踢",
+        "pinyin": "Tī , dă",
+        "arti": "Bermain"
+    },
+    {
+        "hanzi": "网球",
+        "pinyin": "Wăngqiú",
+        "arti": "Tennis"
+    },
+    {
+        "hanzi": "足球",
+        "pinyin": "Zúqiú",
+        "arti": "Sepak bola"
+    },
+    {
+        "hanzi": "听音乐",
+        "pinyin": "Tīng yīnyuè",
+        "arti": "Mendengarkan musik"
+    },
+    {
+        "hanzi": "聊天",
+        "pinyin": "Liáotiān",
+        "arti": "Mengobrol"
+    },
+    {
+        "hanzi": "水果",
+        "pinyin": "Shuíguŏ",
+        "arti": "Buah"
+    },
+    {
+        "hanzi": "香蕉",
+        "pinyin": "Xiāngjiāo",
+        "arti": "Pisang"
+    },
+    {
+        "hanzi": "葡萄",
+        "pinyin": "Pútao",
+        "arti": "Anggur"
+    },
+    {
+        "hanzi": "辣椒",
+        "pinyin": "Làjiāo",
+        "arti": "Sambal"
+    },
+    {
+        "hanzi": "尝",
+        "pinyin": "Cháng",
+        "arti": "Mencicipi"
+    },
+    {
+        "hanzi": "一点儿",
+        "pinyin": "Yīdiăn er",
+        "arti": "Sedikit"
+    }
+]
